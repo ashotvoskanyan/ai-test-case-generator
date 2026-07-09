@@ -3,6 +3,7 @@
 ## Version 0.1 - Manual Prompt MVP
 
 ### Added
+
 - Created the initial project structure.
 - Added README.md with project description.
 - Added prompt.md with Prompt v1 and Prompt v2.
@@ -15,13 +16,34 @@
 - Added prompt quality scoring system.
 
 ### Learned
+
 - Basic project file structure.
 - How to write a simple README.
 - How to store prompts in a project.
 - How to compare a basic prompt with an improved prompt.
 - How AI can generate QA test scenarios, test cases, edge cases, and clarifying questions.
 
+
+
 ### Next
+
 - Add more user story examples.
 - Improve the prompt format.
 - Create a reusable prompt template.
+
+
+
+## Version 0.2 - Better Project Structure
+
+### Added
+
+- Organized examples into a dedicated examples folder.
+
+- Added password reset user story example.
+
+### Changed
+
+- Fixed [template.md](http://template.md) to be a reusable prompt template.
+
+
+

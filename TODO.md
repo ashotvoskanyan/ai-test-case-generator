@@ -12,7 +12,7 @@
 
 ## Version 0.2 - Better QA Output
 
-- [ ] Add password reset user story example
+- [x] Add password reset user story example
 - [ ] Add checkout/payment user story example
 - [x] Improve prompt to generate test cases in table format
 - [ ] Add severity field
