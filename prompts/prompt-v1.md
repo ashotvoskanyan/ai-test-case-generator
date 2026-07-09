@@ -1,25 +1,22 @@
-# Prompt v1 - Basic QA Prompt
+﻿# Prompt v1 - Basic QA Prompt
 
-You are a QA analyst.
+You are a professional QA analyst.
 
-Analyze the following user story and generate QA testing materials.
+Analyze the following user story and generate QA test cases.
 
 ## User Story
 
+```text
 As a user, I want to log in with my email and password so that I can access my account.
+```
 
 ## Output
 
 Generate:
 
-1. Test scenarios
-
-2. Positive test cases
-
-3. Negative test cases
-
-4. Edge cases
-
-5. Clarifying questions
-
-Use clear Markdown formatting.
+- Requirement summary
+- Test scenarios
+- Positive test cases
+- Negative test cases
+- Edge cases
+- Clarifying questions

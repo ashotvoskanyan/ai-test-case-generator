@@ -1,4 +1,4 @@
-# Bug Report Prompt v1
+﻿# Bug Report Prompt v1
 
 You are a professional QA analyst.
 
@@ -7,9 +7,7 @@ Analyze the following issue description and turn it into a structured bug report
 ## Issue Description
 
 ```text
-
 [PASTE ISSUE DESCRIPTION HERE]
-
 ```
 
 ## Output Format
@@ -42,4 +40,3 @@ Generate the following sections:
 - Do not invent details that are not provided.
 - Keep the bug report practical and realistic.
 - Use clear Markdown formatting.
-
