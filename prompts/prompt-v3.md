@@ -1,4 +1,4 @@
-﻿# Prompt v3 - QA Test Case Table Format
+# Prompt v3 - QA Test Case Table Format
 
 You are a professional QA analyst.
 

@@ -1,4 +1,4 @@
-﻿# Prompt v1 - Basic QA Prompt
+# Prompt v1 - Basic QA Prompt
 
 You are a professional QA analyst.
 

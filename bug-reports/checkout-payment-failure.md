@@ -1,4 +1,4 @@
-﻿# Checkout Payment Failure Bug Report
+# Checkout Payment Failure Bug Report
 
 ## Issue Description
 

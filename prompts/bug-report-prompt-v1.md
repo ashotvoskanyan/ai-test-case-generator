@@ -1,4 +1,4 @@
-﻿# Bug Report Prompt v1
+# Bug Report Prompt v1
 
 You are a professional QA analyst.
 

@@ -1,4 +1,4 @@
-﻿# Bug Report Scoring
+# Bug Report Scoring
 
 This file defines a simple scoring system for evaluating AI-generated bug reports.
 

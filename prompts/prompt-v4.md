@@ -1,4 +1,4 @@
-﻿# Prompt v4 - Advanced QA Test Case Format
+# Prompt v4 - Advanced QA Test Case Format
 
 You are a professional QA analyst.
 

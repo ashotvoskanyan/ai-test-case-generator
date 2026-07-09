@@ -1,4 +1,4 @@
-﻿# Reusable QA Prompt Template
+# Reusable QA Prompt Template
 
 Use this template to generate structured QA documentation from a user story, product requirement, or feature description.
 

@@ -1,4 +1,4 @@
-﻿# Login Error Bug Report
+# Login Error Bug Report
 
 ## Issue Description
 

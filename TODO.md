@@ -1,4 +1,4 @@
-﻿# TODO
+# TODO
 
 ## Version 0.1 - Manual Prompt MVP
 

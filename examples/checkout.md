@@ -1,4 +1,4 @@
-﻿# Checkout Test Cases
+# Checkout Test Cases
 
 ## User Story
 

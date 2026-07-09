@@ -1,4 +1,4 @@
-﻿# Prompt v2 - Structured QA Documentation
+# Prompt v2 - Structured QA Documentation
 
 You are a professional QA analyst.
 

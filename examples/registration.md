@@ -1,4 +1,4 @@
-﻿# Registration Test Cases
+# Registration Test Cases
 
 ## User Story
 

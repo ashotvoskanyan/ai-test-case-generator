@@ -1,4 +1,4 @@
-﻿# Password Reset Test Cases
+# Password Reset Test Cases
 
 ## User Story
 

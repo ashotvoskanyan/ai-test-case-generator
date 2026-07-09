@@ -1,4 +1,4 @@
-﻿# AI Test Case Generator
+# AI Test Case Generator
 
 AI Test Case Generator is a beginner AI + QA project that turns user stories, product requirements, and issue descriptions into structured QA documentation.
 

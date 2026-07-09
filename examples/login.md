@@ -1,4 +1,4 @@
-﻿# Login Test Cases
+# Login Test Cases
 
 ## User Story
 

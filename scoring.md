@@ -1,4 +1,4 @@
-﻿# QA Output Scoring
+# QA Output Scoring
 
 This file defines a simple scoring system for evaluating AI-generated QA test case documentation.
 
