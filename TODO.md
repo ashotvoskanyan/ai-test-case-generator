@@ -30,12 +30,14 @@
 - [ ] Display AI output on the page
 - [ ] Connect OpenAI API
 
+
+
 ## Version 0.3 - Bug Report Generator
 
 - [x] Create bug report prompt
 
 - [x] Add login error bug report example
 
-- [ ] Add bug report scoring criteria
+- [x] Add bug report scoring criteria
 
 - [ ] Add more bug report examples

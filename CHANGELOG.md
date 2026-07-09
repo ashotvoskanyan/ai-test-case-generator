@@ -56,17 +56,19 @@
 
 ## Version 0.3 - Bug Report Generator
 
+
+
 ### Added
 
 - Added bug report generator prompt.
-
 - Added login error bug report example.
+- Added bug report quality scoring system.
+
+
 
 ### Learned
 
 - How to structure bug reports.
-
 - Difference between Actual Result and Expected Result.
-
 - Basic usage of Severity and Priority in QA reporting.
 
