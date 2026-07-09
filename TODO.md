@@ -20,6 +20,8 @@
 - [x] Add a simple scoring system for prompt quality
 - [x] Create separate prompt version files
 
+
+
 ## Version 0.3 - First App Version
 
 - [ ] Create a simple web page
@@ -27,3 +29,13 @@
 - [ ] Add Generate button
 - [ ] Display AI output on the page
 - [ ] Connect OpenAI API
+
+## Version 0.3 - Bug Report Generator
+
+- [x] Create bug report prompt
+
+- [x] Add login error bug report example
+
+- [ ] Add bug report scoring criteria
+
+- [ ] Add more bug report examples

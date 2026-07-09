@@ -52,3 +52,21 @@
 - Removed old root-level [examples.md](http://examples.md) and [prompt.md](http://prompt.md) files after moving examples and prompts into dedicated folders. 
 - Updated [README.md](http://README.md) with the current project structure.
 
+
+
+## Version 0.3 - Bug Report Generator
+
+### Added
+
+- Added bug report generator prompt.
+
+- Added login error bug report example.
+
+### Learned
+
+- How to structure bug reports.
+
+- Difference between Actual Result and Expected Result.
+
+- Basic usage of Severity and Priority in QA reporting.
+
