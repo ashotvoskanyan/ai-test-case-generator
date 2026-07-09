@@ -1,6 +1,4 @@
-# Examples
-
-Examples are now organized in the examples folder.
+# Login Examples
 
 ## Example 1: Login User Story
 
@@ -25,11 +23,7 @@ As a user, I want to log in with my email and password so that I can access my a
 
 ---
 
-
-
 ## Positive Test Cases
-
-
 
 ### TC-001: Login with valid credentials
 
@@ -53,8 +47,6 @@ As a user, I want to log in with my email and password so that I can access my a
 
 ---
 
-
-
 ### TC-002: Login after trimming spaces in email
 
 **Preconditions:**
@@ -77,11 +69,7 @@ As a user, I want to log in with my email and password so that I can access my a
 
 ---
 
-
-
 ## Negative Test Cases
-
-
 
 ### TC-003: Login with invalid email
 
@@ -103,8 +91,6 @@ As a user, I want to log in with my email and password so that I can access my a
 **Priority:** High
 
 ---
-
-
 
 ### TC-004: Login with invalid password
 
@@ -128,8 +114,6 @@ As a user, I want to log in with my email and password so that I can access my a
 
 ---
 
-
-
 ### TC-005: Login with empty email field
 
 **Preconditions:**
@@ -150,8 +134,6 @@ As a user, I want to log in with my email and password so that I can access my a
 **Priority:** High
 
 ---
-
-
 
 ### TC-006: Login with empty password field
 
@@ -174,8 +156,6 @@ As a user, I want to log in with my email and password so that I can access my a
 
 ---
 
-
-
 ### TC-007: Login with invalid email format
 
 **Preconditions:**
@@ -197,8 +177,6 @@ As a user, I want to log in with my email and password so that I can access my a
 
 ---
 
-
-
 ## Edge Cases
 
 1. Email contains uppercase letters.
@@ -214,8 +192,6 @@ As a user, I want to log in with my email and password so that I can access my a
 
 ---
 
-
-
 ## Clarifying Questions
 
 1. Should login require email verification before access?
@@ -224,26 +200,20 @@ As a user, I want to log in with my email and password so that I can access my a
 4. Is there a limit on failed login attempts?
 5. Should the account be locked after several failed attempts?
 6. Should users be able to log in with username or only email?
-7. Should “Remember me” be available?
+7. Should "Remember me" be available?
 8. Should password visibility toggle be available?
 9. Should two-factor authentication be supported?
 10. What page should the user see after successful login?
 
 ---
 
-
-
 ## Example 2: Improved Login User Story Prompt
-
-
 
 ### Input
 
 As a user, I want to log in with my email and password so that I can access my account.
 
 ### AI Output
-
-
 
 ## 1. Requirement Summary
 
@@ -252,8 +222,6 @@ The user wants to log in using an email and password in order to access their ac
 The core requirement is authentication through email and password.
 
 ---
-
-
 
 ## 2. Assumptions
 
@@ -265,8 +233,6 @@ The core requirement is authentication through email and password.
 6. The exact error messages are not defined in the user story.
 
 ---
-
-
 
 ## 3. Test Scenarios
 
@@ -283,11 +249,7 @@ The core requirement is authentication through email and password.
 
 ---
 
-
-
 ## 4. Positive Test Cases
-
-
 
 ### TC-001: Login with valid email and valid password
 
@@ -311,8 +273,6 @@ The core requirement is authentication through email and password.
 
 ---
 
-
-
 ### TC-002: Password field masks entered characters
 
 **Preconditions:**
@@ -333,11 +293,7 @@ The core requirement is authentication through email and password.
 
 ---
 
-
-
 ## 5. Negative Test Cases
-
-
 
 ### TC-003: Login with empty email field
 
@@ -360,8 +316,6 @@ The core requirement is authentication through email and password.
 
 ---
 
-
-
 ### TC-004: Login with empty password field
 
 **Preconditions:**
@@ -382,8 +336,6 @@ The core requirement is authentication through email and password.
 **Priority:** High
 
 ---
-
-
 
 ### TC-005: Login with both fields empty
 
@@ -406,8 +358,6 @@ The core requirement is authentication through email and password.
 
 ---
 
-
-
 ### TC-006: Login with invalid email format
 
 **Preconditions:**
@@ -429,8 +379,6 @@ The core requirement is authentication through email and password.
 
 ---
 
-
-
 ### TC-007: Login with unregistered email
 
 **Preconditions:**
@@ -451,8 +399,6 @@ The core requirement is authentication through email and password.
 **Priority:** High
 
 ---
-
-
 
 ### TC-008: Login with incorrect password
 
@@ -476,8 +422,6 @@ The core requirement is authentication through email and password.
 
 ---
 
-
-
 ## 6. Edge Cases
 
 1. Email contains uppercase letters.
@@ -495,8 +439,6 @@ The core requirement is authentication through email and password.
 
 ---
 
-
-
 ## 7. Clarifying Questions
 
 1. What should happen after successful login?
@@ -508,300 +450,13 @@ The core requirement is authentication through email and password.
 7. Should the account be temporarily locked after too many failed attempts?
 8. Should users be able to log in only with email, or also with username/phone?
 9. Is two-factor authentication required?
-10. Should there be a “Remember me” option?
-11. Should there be a “Forgot password?” link?
+10. Should there be a "Remember me" option?
+11. Should there be a "Forgot password?" link?
 12. What password rules exist for the account?
 
 ---
 
-
-
-## Example 3: User Registration Story
-
-
-
-### Input
-
-As a new user, I want to create an account using my email and password so that I can start using the application.
-
-### AI Output
-
-
-
-## 1. Requirement Summary
-
-A new user wants to create an account using an email and password so they can start using the application.
-
-The core requirement is user registration with email and password.
-
----
-
-
-
-## 2. Assumptions
-
-1. The registration page contains an email field, password field, and submit/create account button.
-2. The user does not already have an account with the same email.
-3. The system validates required fields before account creation.
-4. The system validates email format.
-5. The system validates password rules, but exact password requirements are not provided.
-6. After successful registration, the user can access the application or proceed to the next onboarding step.
-7. Email verification behavior is not defined in the user story.
-
----
-
-
-
-## 3. Test Scenarios
-
-1. Verify that a new user can create an account with valid email and valid password.
-2. Verify that registration fails when the email field is empty.
-3. Verify that registration fails when the password field is empty.
-4. Verify that registration fails when both fields are empty.
-5. Verify that registration fails when the email format is invalid.
-6. Verify that registration fails when the email is already registered.
-7. Verify that registration handles password validation correctly.
-8. Verify that the user receives clear validation messages when registration fails.
-9. Verify that the user is redirected or shown the correct success state after account creation.
-10. Verify that the password is masked while typing.
-
----
-
-
-
-## 4. Positive Test Cases
-
-
-
-### TC-001: Create account with valid email and valid password
-
-**Preconditions:**
-
-- User is on the registration page.
-- Email address is not already registered.
-
-**Test Steps:**
-
-1. Enter a valid email address.
-2. Enter a valid password.
-3. Click the create account button.
-
-**Expected Result:**
-
-- Account is created successfully.
-- User sees a success state, is logged in, or is redirected to the next step.
-
-**Priority:** High
-
----
-
-
-
-### TC-002: Password field masks entered characters
-
-**Preconditions:**
-
-- User is on the registration page.
-
-**Test Steps:**
-
-1. Click the password field.
-2. Enter a password.
-
-**Expected Result:**
-
-- Password characters are hidden or masked.
-- Password is not displayed as plain readable text.
-
-**Priority:** Medium
-
----
-
-
-
-## 5. Negative Test Cases
-
-
-
-### TC-003: Register with empty email field
-
-**Preconditions:**
-
-- User is on the registration page.
-
-**Test Steps:**
-
-1. Leave the email field empty.
-2. Enter a valid password.
-3. Click the create account button.
-
-**Expected Result:**
-
-- Account is not created.
-- System shows a validation message for the email field.
-
-**Priority:** High
-
----
-
-
-
-### TC-004: Register with empty password field
-
-**Preconditions:**
-
-- User is on the registration page.
-
-**Test Steps:**
-
-1. Enter a valid email address.
-2. Leave the password field empty.
-3. Click the create account button.
-
-**Expected Result:**
-
-- Account is not created.
-- System shows a validation message for the password field.
-
-**Priority:** High
-
----
-
-
-
-### TC-005: Register with both fields empty
-
-**Preconditions:**
-
-- User is on the registration page.
-
-**Test Steps:**
-
-1. Leave the email field empty.
-2. Leave the password field empty.
-3. Click the create account button.
-
-**Expected Result:**
-
-- Account is not created.
-- System shows validation messages for required fields.
-
-**Priority:** High
-
----
-
-
-
-### TC-006: Register with invalid email format
-
-**Preconditions:**
-
-- User is on the registration page.
-
-**Test Steps:**
-
-1. Enter an invalid email format, for example `userexample.com`.
-2. Enter a valid password.
-3. Click the create account button.
-
-**Expected Result:**
-
-- Account is not created.
-- System shows an email format validation message.
-
-**Priority:** High
-
----
-
-
-
-### TC-007: Register with already registered email
-
-**Preconditions:**
-
-- User is on the registration page.
-- Email address already exists in the system.
-
-**Test Steps:**
-
-1. Enter an already registered email address.
-2. Enter a valid password.
-3. Click the create account button.
-
-**Expected Result:**
-
-- Account is not created.
-- System shows an error message explaining that the email cannot be used or is already registered.
-
-**Priority:** High
-
----
-
-
-
-### TC-008: Register with password that does not meet requirements
-
-**Preconditions:**
-
-- User is on the registration page.
-- Password requirements exist in the system.
-
-**Test Steps:**
-
-1. Enter a valid unused email address.
-2. Enter a password that does not meet the required password rules.
-3. Click the create account button.
-
-**Expected Result:**
-
-- Account is not created.
-- System shows a password validation message.
-
-**Priority:** High
-
----
-
-
-
-## 6. Edge Cases
-
-1. Email contains uppercase letters.
-2. Email contains leading or trailing spaces.
-3. Email contains plus addressing, for example `user+test@example.com`.
-4. Password contains special characters.
-5. Password contains spaces.
-6. Password is very long.
-7. Password is very short.
-8. User clicks the create account button multiple times quickly.
-9. User presses Enter instead of clicking the create account button.
-10. User refreshes the page during registration.
-11. User loses internet connection during registration.
-12. User tries to register with an email that was recently deleted or deactivated.
-
----
-
-
-
-## 7. Clarifying Questions
-
-1. What are the exact password requirements?
-2. Should users be logged in automatically after registration?
-3. Should users verify their email before accessing the application?
-4. What success message or screen should appear after account creation?
-5. What error message should appear if the email is already registered?
-6. Should email addresses be treated as case-sensitive or case-insensitive?
-7. Should leading/trailing spaces in email be trimmed automatically?
-8. Is there a username field, or only email and password?
-9. Is there a confirm password field?
-10. Are Terms of Service or Privacy Policy checkboxes required?
-11. Should CAPTCHA or bot protection be used?
-12. Should users be limited from creating multiple accounts quickly?
-
-
-
----
-
-## Example 4: Login User Story With Test Case Table
+## Example 3: Login User Story With Test Case Table
 
 ### Input
 
@@ -929,6 +584,6 @@ The main requirement is email/password authentication for an existing user.
 
 8. Is two-factor authentication required?
 
-9. Should there be a “Remember me” option?
+9. Should there be a "Remember me" option?
 
-10. Should there be a “Forgot password?” link?
+10. Should there be a "Forgot password?" link?
