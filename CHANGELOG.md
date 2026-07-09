@@ -63,6 +63,7 @@
 - Added bug report generator prompt.
 - Added login error bug report example.
 - Added bug report quality scoring system.
+- Added checkout payment failure bug report example.
 
 
 

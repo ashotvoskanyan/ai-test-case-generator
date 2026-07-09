@@ -64,7 +64,9 @@ Completed:
 
 
 
-## Project Structure
+## ## Project Structure
+
+```text
 
 ai-test-case-generator/
 
@@ -78,9 +80,13 @@ ai-test-case-generator/
 
 ├── [scoring.md](http://scoring.md)
 
+├── [bug-report-scoring.md](http://bug-report-scoring.md)
+
 ├── bug-reports/
 
-│   └── [login-error.md](http://login-error.md)
+│   ├── [login-error.md](http://login-error.md)
+
+│   └── [checkout-payment-failure.md](http://checkout-payment-failure.md)
 
 ├── examples/
 
@@ -103,6 +109,8 @@ ai-test-case-generator/
     ├── [prompt-v3.md](http://prompt-v3.md)
 
     └── [prompt-v4.md](http://prompt-v4.md)
+
+```
 
 ## Examples
 

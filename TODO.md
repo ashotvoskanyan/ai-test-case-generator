@@ -40,4 +40,4 @@
 
 - [x] Add bug report scoring criteria
 
-- [ ] Add more bug report examples
+- [x] Add more bug report examples
