@@ -1,46 +1,89 @@
-# Prompt Quality Scoring
+# QA Output Scoring
 
-This file defines how to evaluate the quality of AI-generated QA documentation.
+This file defines a simple scoring system for evaluating AI-generated QA test case documentation.
 
-## Scoring Criteria
+The goal is to check whether the AI output is clear, complete, practical, and useful for real QA work.
 
-Rate each AI output from 1 to 5.
+## Scoring Scale
 
-| Criteria | Description | Score |
+Each criterion is scored from 1 to 5.
+
+```text
+
+1 = Poor
+
+2 = Weak
+
+3 = Acceptable
+
+4 = Good
+
+5 = Excellent
+
+```
+
+Maximum score: **25 points**
+
+## Criteria
+
+| Criterion | Description | Score |
+
 |---|---|---|
-| Requirement Understanding | Does the output correctly understand the user story? | 1-5 |
-| Test Coverage | Does the output cover positive, negative, and edge cases? | 1-5 |
-| Clarity | Are the test cases easy to read and execute? | 1-5 |
-| Structure | Does the output follow the requested format? | 1-5 |
-| Practical Value | Would this be useful for a real QA task? | 1-5 |
 
-## Total Score
+| Requirement Understanding | Does the AI correctly understand the user story or requirement? | 1-5 |
 
-Maximum score: 25
+| Test Coverage | Does the output include positive, negative, and edge cases? | 1-5 |
+
+| Clarity | Are the test cases easy to read and understand? | 1-5 |
+
+| Structure | Is the output well organized with useful sections or tables? | 1-5 |
+
+| Practical Value | Could a real QA tester use this output as a starting point? | 1-5 |
 
 ## Score Meaning
 
-- 21-25: Strong output
-- 16-20: Good but needs improvement
-- 11-15: Weak output
-- 1-10: Poor output
+| Total Score | Meaning |
+
+|---|---|
+
+| 21-25 | Strong output |
+
+| 16-20 | Good output, but needs improvement |
+
+| 11-15 | Basic output, needs more work |
+
+| 6-10 | Weak output |
+
+| 1-5 | Poor output |
 
 ## Example Evaluation
 
-Prompt Version: v3
+Example file: `examples/login.md`
 
-User Story:
-As a user, I want to log in with my email and password so that I can access my account.
+| Criterion | Score | Notes |
 
-| Criteria | Score | Notes |
 |---|---:|---|
-| Requirement Understanding | 5 | Correctly identifies email/password login |
-| Test Coverage | 5 | Includes positive, negative, and edge cases |
-| Clarity | 4 | Mostly clear, some steps could be more specific |
-| Structure | 5 | Uses the requested table format |
-| Practical Value | 4 | Useful for a real QA task, but still needs product-specific details |
 
-Total Score: 23/25
+| Requirement Understanding | 5 | The output correctly understands the login requirement. |
 
-Conclusion:
-Prompt v3 produces a strong QA output.
+| Test Coverage | 4 | Includes positive, negative, and edge cases. Could include more security cases. |
+
+| Clarity | 5 | Test cases are clear and easy to follow. |
+
+| Structure | 5 | Output is well organized. |
+
+| Practical Value | 4 | Useful starting point for QA work, but still needs product-specific details. |
+
+## Example Total
+
+```text
+
+23 / 25
+
+```
+
+## Notes
+
+This scoring system is simple on purpose.
+
+It helps compare prompt versions and decide whether the AI output is good enough to keep, improve, or replace.

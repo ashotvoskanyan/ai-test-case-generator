@@ -1,12 +1,20 @@
-# # Reusable QA Prompt Template
+# Reusable QA Prompt Template
+
+Use this template to generate structured QA documentation from a user story, product requirement, or feature description.
+
+## Prompt
 
 You are a professional QA analyst.
 
-Analyze the following user story or product requirement and generate structured QA testing documentation.
+Analyze the following user story or requirement and generate structured QA documentation.
 
-## Input
+## User Story or Requirement
+
+```text
 
 [PASTE USER STORY OR REQUIREMENT HERE]
+
+```
 
 ## Output Format
 
@@ -26,28 +34,12 @@ Generate the following sections:
 
 7. Clarifying Questions
 
-Each test case must include:
+## General Rules
 
-- Test Case ID
+- Do not invent product rules that are not provided.
 
-- Title
+- If information is missing, list it under Clarifying Questions.
 
-- Preconditions
+- Keep the output clear and practical.
 
-- Test Steps
-
-- Expected Result
-
-- Priority
-
-## Rules
-
-- Use clear Markdown formatting.
-
-- Do not invent product features that are not mentioned in the input.
-
-- If something is unclear, add it to Clarifying Questions.
-
-- Keep test cases practical and realistic.
-
-- Focus on user-facing behavior.
+- Use Markdown formatting.

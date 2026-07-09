@@ -1,27 +1,44 @@
 # AI Test Case Generator
 
-AI Test Case Generator is a beginner AI + QA project that turns user stories and product requirements into structured QA documentation.
+AI Test Case Generator is a beginner AI + QA project that turns user stories, product requirements, and issue descriptions into structured QA documentation.
 
-The project started as a manual prompt-based MVP and is being improved step by step toward a simple AI-powered QA tool.
+The project started as a manual prompt-based MVP and is being improved step by step toward a simple AI-powered QA assistant.
 
 ## Overview
 
-This project uses reusable prompts to generate:
+This project uses reusable prompts to generate QA documentation such as:
 
 - Requirement summaries
+
 - Assumptions
+
 - Test scenarios
+
 - Test cases
+
 - Edge cases
+
 - Clarifying questions
+
+- Bug reports
+
+- Prompt quality evaluations
 
 The goal is to practice Manual QA, prompt engineering, AI-assisted testing, GitHub documentation, and basic project structure.
 
 ## What This Project Does
 
-The project takes a user story or product requirement as input.
+The project currently has two main workflows:
 
-Example:
+1. **Test Case Generator**  
+
+   Turns user stories or product requirements into structured QA test cases.
+
+2. **Bug Report Generator**  
+
+   Turns issue descriptions into structured bug reports.
+
+## Example Input
 
 ```text
 
@@ -29,42 +46,73 @@ As a user, I want to log in with my email and password so that I can access my a
 
 ```
 
-The AI then generates structured QA documentation, including test scenarios, positive test cases, negative test cases, edge cases, and clarifying questions.
+## Example Output
+
+The AI can generate:
+
+- Requirement summary
+
+- Assumptions
+
+- Test scenarios
+
+- Positive test cases
+
+- Negative test cases
+
+- Edge cases
+
+- Clarifying questions
 
 ## Skills Demonstrated
 
 This project demonstrates practical beginner-level skills in:
 
 - Manual QA
+
 - Test case design
+
+- Bug report writing
+
 - Requirement analysis
+
 - Prompt engineering
+
 - AI-assisted QA workflows
+
 - Markdown documentation
+
 - Git and GitHub
+
 - Project structure and versioning
-
-
 
 ## Current Status
 
-Current version: Version 0.2 - Better Project Structure
+Current version: Version 0.3 - Bug Report Generator
 
 Completed:
 
 - Manual prompt MVP
+
 - Reusable QA prompt template
+
 - Prompt versions v1-v4
+
 - Example QA outputs for login, registration, password reset, and checkout
-- Prompt quality scoring system
-- Organized project structure
-- GitHub repository with commit history
+
 - Bug report generator prompt
-- Example bug report for login error
 
+- Example bug reports for login error and checkout payment failure
 
+- Prompt quality scoring system
 
-## ## Project Structure
+- Bug report quality scoring system
+
+- Organized project structure
+
+- GitHub repository with commit history
+
+## Project Structure
 
 ```text
 
@@ -114,62 +162,82 @@ ai-test-case-generator/
 
 ## Examples
 
-QA examples are stored in the `examples/` folder.
+QA test case examples are stored in the `examples/` folder.
 
-Current examples:
+Current test case examples:
 
 - `examples/login.md` — login user story
+
 - `examples/registration.md` — registration user story
+
 - `examples/password-reset.md` — password reset user story
+
 - `examples/checkout.md` — checkout user story
 
+## Bug Reports
 
+Bug report examples are stored in the `bug-reports/` folder.
+
+Current bug report examples:
+
+- `bug-reports/login-error.md` — login error bug report
+
+- `bug-reports/checkout-payment-failure.md` — checkout payment failure bug report
 
 ## Prompts
 
 Prompt versions are stored in the `prompts/` folder.
 
-- `prompt-v1.md` — basic QA prompt
-- `prompt-v2.md` — structured QA documentation
-- `prompt-v3.md` — test case table format
-- `prompt-v4.md` — advanced QA test case format
-- `bug-report-prompt-v1.md` — converts issue descriptions into structured bug reports
+Current prompts:
 
+- `prompts/prompt-v1.md` — basic QA prompt
 
+- `prompts/prompt-v2.md` — structured QA documentation
+
+- `prompts/prompt-v3.md` — test case table format
+
+- `prompts/prompt-v4.md` — advanced QA test case format
+
+- `prompts/bug-report-prompt-v1.md` — structured bug report generator
 
 ## Prompt Versioning
 
-The prompt improved step by step:
+The test case prompt improved step by step:
 
 1. **Prompt v1** — basic QA output
+
 2. **Prompt v2** — structured QA documentation
+
 3. **Prompt v3** — Markdown table test case format
+
 4. **Prompt v4** — advanced QA format with Type, Test Level, Severity, and Status
 
 This shows how the AI output became more structured and more useful for real QA work.
 
-## Prompt Quality Scoring
+## Quality Scoring
 
-The project includes a simple scoring system in `scoring.md`.
+The project includes two simple scoring systems:
 
-AI-generated QA output is evaluated using:
+- `scoring.md` — evaluates AI-generated QA test case documentation
 
-- Requirement Understanding
-- Test Coverage
-- Clarity
-- Structure
-- Practical Value
+- `bug-report-scoring.md` — evaluates AI-generated bug reports
 
-Maximum score: 25 points.
+These scoring files help check whether the AI output is clear, practical, complete, and useful for real QA work.
 
 ## Next Steps
 
 Planned improvements:
 
-- Add more complex user stories
-- Improve Prompt v4 based on scoring results
-- Add bug report generation
 - Add API testing examples
-- Build a simple web interface
-- Connect the project to the OpenAI API
 
+- Add API test prompt v1
+
+- Add more complex user stories
+
+- Improve Prompt v4 based on scoring results
+
+- Add more bug report examples
+
+- Build a simple web interface
+
+- Connect the project to the OpenAI API

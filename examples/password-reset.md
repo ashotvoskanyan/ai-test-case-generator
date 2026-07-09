@@ -1,233 +1,111 @@
-# Password Reset Example
+# Password Reset Test Cases
 
-## Input
+## User Story
+
+```text
 
 As a user, I want to reset my password using my email so that I can regain access to my account.
+
+```
+
+## Prompt Used
+
+Prompt v4 - Advanced QA Test Case Format
 
 ## AI Output
 
 ## 1. Requirement Summary
 
-The user wants to reset their password using their email in order to regain access to their account.
-
-The core requirement is password recovery through an email-based reset flow.
-
----
+The user should be able to request a password reset using their email address and create a new password in order to regain access to their account.
 
 ## 2. Assumptions
 
-1. The user has an existing account registered with an email address.
+- The user has an existing account.
 
-2. The password reset page contains an email input field and a submit button.
+- The password reset flow starts from a "Forgot Password" option.
 
-3. The system validates that the email field is not empty.
+- The user enters an email address to request a reset.
 
-4. The system validates the email format.
+- If the email is valid and registered, the system sends password reset instructions.
 
-5. The system sends password reset instructions or a reset link to the provided email address.
+- The reset process uses a reset link or token.
 
-6. The exact email content, reset link expiration time, and security rules are not defined in the user story.
-
-7. The user story does not specify whether the system should reveal if an email is registered.
-
----
+- The system validates the new password before saving it.
 
 ## 3. Test Scenarios
 
-1. Verify that a user can request a password reset with a valid registered email.
+- User requests a password reset with a registered email.
 
-2. Verify that password reset request fails when the email field is empty.
+- User tries to request a password reset with an unregistered email.
 
-3. Verify that password reset request fails when the email format is invalid.
+- User submits the password reset form with an invalid email format.
 
-4. Verify behavior when the user enters an unregistered email.
+- User submits the password reset form with an empty email field.
 
-5. Verify that the system shows a clear confirmation or error message after submission.
+- User opens a valid password reset link and creates a new password.
 
-6. Verify that the password reset email is sent for a registered email.
+- User tries to use an expired or invalid reset link.
 
-7. Verify that the password reset flow handles uppercase email input.
+- User tries to set a weak or invalid new password.
 
-8. Verify that the password reset flow handles leading/trailing spaces in the email field.
+- User logs in successfully after resetting the password.
 
-9. Verify that repeated password reset requests are handled safely.
+## 4. Test Cases
 
-10. Verify that the user can access the password reset page from the login page, if such link exists.
+| Test Case ID | Type | Test Level | Title | Preconditions | Steps | Expected Result | Priority | Severity | Status |
 
----
+|---|---|---|---|---|---|---|---|---|---|
 
-## 4. Positive Test Cases
+| TC-001 | Positive | Functional | Request password reset with registered email | User has an existing account and is on the password reset page | 1. Enter registered email address<br>2. Submit password reset request | System accepts the request and sends password reset instructions according to product rules | High | Major | Ready |
 
-### TC-001: Request password reset with valid registered email
+| TC-002 | Negative | Functional | Request password reset with unregistered email | User is on the password reset page | 1. Enter unregistered email address<br>2. Submit password reset request | System handles the request safely and does not reveal unnecessary account information | High | Major | Draft |
 
-**Preconditions:**
+| TC-003 | Negative | Validation | Submit password reset request with invalid email format | User is on the password reset page | 1. Enter invalid email format<br>2. Submit password reset request | User sees an email format validation message | Medium | Minor | Ready |
 
-- User has an existing registered account.
+| TC-004 | Negative | Validation | Submit password reset request with empty email field | User is on the password reset page | 1. Leave email field empty<br>2. Submit password reset request | User sees a required field validation message | Medium | Minor | Ready |
 
-- User is on the password reset page.
+| TC-005 | Positive | Functional | Reset password using valid reset link | User has requested password reset and has a valid reset link or token | 1. Open valid reset link<br>2. Enter new valid password<br>3. Confirm new password if required<br>4. Submit new password | Password is updated successfully and user can proceed according to product rules | High | Critical | Ready |
 
-**Test Steps:**
+| TC-006 | Negative | Security | Use expired or invalid reset link | User has an expired or invalid reset link or token | 1. Open expired or invalid reset link<br>2. Attempt to continue password reset | System rejects the link and shows a clear error message without resetting the password | High | Major | Ready |
 
-1. Enter a valid registered email address.
+| TC-007 | Negative | Validation | Set weak or invalid new password | User has opened a valid reset link | 1. Enter weak or invalid new password<br>2. Submit password reset form | System rejects the password and shows password validation requirements | Medium | Major | Draft |
 
-2. Click the submit/reset button.
+| TC-008 | Positive | Functional | Log in after successful password reset | User has successfully reset password | 1. Go to login page<br>2. Enter email address<br>3. Enter new password<br>4. Click Login | User logs in successfully with the new password | High | Critical | Ready |
 
-**Expected Result:**
+## 5. Edge Cases
 
-- System accepts the request.
+- User requests password reset multiple times.
 
-- User sees a confirmation message.
+- User tries to use an old reset link after requesting a new one.
 
-- Password reset instructions or a reset link are sent to the email address.
+- User opens the reset link on a different device or browser.
 
-**Priority:** High
+- User refreshes the password reset page before submitting the new password.
 
----
+- User enters a password with leading or trailing spaces.
 
-### TC-002: Submit password reset request with uppercase email letters
+- User enters mismatched password and confirm password values.
 
-**Preconditions:**
+- Reset email is delayed or not received.
 
-- User has an existing registered account.
+- User attempts to reuse the previous password.
 
-- User is on the password reset page.
+- User tries to reset password for a locked or disabled account.
 
-**Test Steps:**
+## 6. Clarifying Questions
 
-1. Enter the registered email address using uppercase letters.
+- Should the system show the same message for registered and unregistered emails?
 
-2. Click the submit/reset button.
+- How long should the reset link or token remain valid?
 
-**Expected Result:**
+- Should old reset links become invalid after a new reset request?
 
-- System handles email case according to product rules.
+- What password rules should be enforced?
 
-- Password reset request is processed if email matching is case-insensitive.
+- Should users be automatically logged in after resetting the password?
 
-**Priority:** Medium
+- Should the user receive a confirmation email after password reset?
 
----
+- Should previous passwords be blocked?
 
-## 5. Negative Test Cases
-
-### TC-003: Submit password reset request with empty email field
-
-**Preconditions:**
-
-- User is on the password reset page.
-
-**Test Steps:**
-
-1. Leave the email field empty.
-
-2. Click the submit/reset button.
-
-**Expected Result:**
-
-- Password reset request is not submitted.
-
-- System shows a validation message for the email field.
-
-**Priority:** High
-
----
-
-### TC-004: Submit password reset request with invalid email format
-
-**Preconditions:**
-
-- User is on the password reset page.
-
-**Test Steps:**
-
-1. Enter an invalid email format, for example `userexample.com`.
-
-2. Click the submit/reset button.
-
-**Expected Result:**
-
-- Password reset request is not submitted.
-
-- System shows an email format validation message.
-
-**Priority:** High
-
----
-
-### TC-005: Submit password reset request with unregistered email
-
-**Preconditions:**
-
-- User is on the password reset page.
-
-- Email address is not registered in the system.
-
-**Test Steps:**
-
-1. Enter an unregistered email address.
-
-2. Click the submit/reset button.
-
-**Expected Result:**
-
-- System handles the request according to product/security rules.
-
-- System does not expose sensitive account information unless the product explicitly allows it.
-
-**Priority:** High
-
----
-
-## 6. Edge Cases
-
-1. Email contains uppercase letters.
-
-2. Email contains leading or trailing spaces.
-
-3. Email contains plus addressing, for example `user+test@example.com`.
-
-4. Email field contains a very long email address.
-
-5. User clicks the submit/reset button multiple times quickly.
-
-6. User submits the form with unstable internet connection.
-
-7. User refreshes the page after submitting the reset request.
-
-8. User requests password reset multiple times in a short period.
-
-9. User enters an email with special but valid characters.
-
-10. User tries to use an expired password reset link.
-
-11. User tries to use the same password reset link more than once.
-
-12. User opens the reset link on a different device or browser.
-
----
-
-## 7. Clarifying Questions
-
-1. Should the system show the same message for registered and unregistered emails?
-
-2. What exact confirmation message should appear after submitting the reset request?
-
-3. How long should the password reset link remain valid?
-
-4. Can the same reset link be used more than once?
-
-5. Should there be rate limiting for repeated password reset requests?
-
-6. Should the user receive an email notification after changing the password?
-
-7. Should the user be logged in automatically after resetting the password?
-
-8. What password rules should apply when creating the new password?
-
-9. Should users confirm the new password in a second field?
-
-10. Should password reset require additional verification, such as 2FA?
-
-11. Should leading/trailing spaces in the email field be trimmed automatically?
-
-12. Should email matching be case-sensitive or case-insensitive?
+- What should happen if the account is locked or disabled?

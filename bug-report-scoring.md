@@ -1,63 +1,89 @@
-# Bug Report Quality Scoring
+# Bug Report Scoring
 
-This file defines how to evaluate the quality of AI-generated bug reports.
+This file defines a simple scoring system for evaluating AI-generated bug reports.
 
-## Scoring Criteria
+The goal is to check whether the bug report is clear, complete, realistic, and useful for real QA work.
 
-Rate each AI-generated bug report from 1 to 5.
+## Scoring Scale
 
-| Criteria | Description | Score |
+Each criterion is scored from 1 to 5.
+
+```text
+
+1 = Poor
+
+2 = Weak
+
+3 = Acceptable
+
+4 = Good
+
+5 = Excellent
+
+```
+
+Maximum score: **25 points**
+
+## Criteria
+
+| Criterion | Description | Score |
 
 |---|---|---|
 
-| Bug Title Clarity | Is the bug title short, specific, and understandable? | 1-5 |
+| Bug Title Clarity | Is the bug title short, specific, and easy to understand? | 1-5 |
 
-| Reproduction Steps | Are the steps clear enough for another tester or developer to reproduce the issue? | 1-5 |
+| Reproduction Steps | Are the steps numbered, clear, and realistic? | 1-5 |
 
-| Actual vs Expected Result | Does the report clearly explain what happened and what should have happened? | 1-5 |
+| Actual vs Expected Result | Are the actual and expected results clearly separated? | 1-5 |
 
-| Severity and Priority | Are severity and priority reasonable based on the issue? | 1-5 |
+| Severity and Priority | Are severity and priority reasonable for the issue? | 1-5 |
 
 | Missing Information Handling | Does the report clearly list missing details instead of inventing them? | 1-5 |
 
-## Total Score
-
-Maximum score: 25
-
 ## Score Meaning
 
-- 21-25: Strong bug report
+| Total Score | Meaning |
 
-- 16-20: Good but needs improvement
+|---|---|
 
-- 11-15: Weak bug report
+| 21-25 | Strong bug report |
 
-- 1-10: Poor bug report
+| 16-20 | Good bug report, but needs improvement |
+
+| 11-15 | Basic bug report, needs more work |
+
+| 6-10 | Weak bug report |
+
+| 1-5 | Poor bug report |
 
 ## Example Evaluation
 
-Prompt Version: Bug Report Prompt v1
+Example file: `bug-reports/login-error.md`
 
-Issue Description:
-
-When I enter the correct email and password, I see an error message and cannot log in.
-
-| Criteria | Score | Notes |
+| Criterion | Score | Notes |
 
 |---|---:|---|
 
-| Bug Title Clarity | 5 | The title clearly describes the login issue |
+| Bug Title Clarity | 5 | The title clearly explains the issue. |
 
-| Reproduction Steps | 4 | Steps are clear, but test environment is missing |
+| Reproduction Steps | 4 | Steps are clear, but exact test data is missing. |
 
-| Actual vs Expected Result | 5 | Actual and expected results are clearly separated |
+| Actual vs Expected Result | 5 | Actual and expected results are clearly separated. |
 
-| Severity and Priority | 4 | Major/High is reasonable for login failure |
+| Severity and Priority | 4 | Major severity and high priority are reasonable for a login issue. |
 
-| Missing Information Handling | 5 | Missing environment, browser, error message, and logs are listed |
+| Missing Information Handling | 5 | Missing information is clearly listed instead of invented. |
 
-Total Score: 23/25
+## Example Total
 
-Conclusion:
+```text
 
-Bug Report Prompt v1 produces a strong first bug report, but more environment details are needed for real debugging.
+23 / 25
+
+```
+
+## Notes
+
+This scoring system helps compare AI-generated bug reports and decide whether the output is good enough for QA documentation.
+
+The goal is not to make the score perfect. The goal is to make the quality of the AI output easier to review.

@@ -2,13 +2,17 @@
 
 You are a professional QA analyst.
 
-Analyze the following user story or product requirement and generate structured QA testing documentation.
+Analyze the following user story or requirement and generate structured QA test cases.
 
-## Input
+## User Story or Requirement
+
+```text
 
 [PASTE USER STORY OR REQUIREMENT HERE]
 
-## Output Sections
+```
+
+## Output Format
 
 Generate the following sections:
 
@@ -26,7 +30,7 @@ Generate the following sections:
 
 ## Test Case Table Format
 
-For the Test Cases section, use a Markdown table with these columns:
+Use this table format for test cases:
 
 | Test Case ID | Type | Test Level | Title | Preconditions | Steps | Expected Result | Priority | Severity | Status |
 
@@ -34,28 +38,30 @@ For the Test Cases section, use a Markdown table with these columns:
 
 ## Field Rules
 
-- Test Case ID format: TC-001, TC-002, TC-003
+- Test Case ID should use a clear format, for example: `TC-001`, `TC-002`, `TC-003`.
 
-- Type must be one of: Positive, Negative, Edge
+- Type must be one of: Positive, Negative, Edge.
 
-- Test Level must be one of: UI, API, Functional, Validation, Security, Usability
+- Test Level must be one of: UI, API, Functional, Validation, Security, Usability.
 
-- Priority must be one of: High, Medium, Low
+- Priority must be one of: High, Medium, Low.
 
-- Severity must be one of: Critical, Major, Minor
+- Severity must be one of: Critical, Major, Minor.
 
-- Status must be one of: Draft, Ready
+- Status must be one of: Draft, Ready.
+
+- Steps must be clear and numbered.
+
+- Expected Result must describe what should happen after completing the steps.
 
 ## General Rules
 
-- Keep steps short and clear.
+- Do not invent product rules that are not provided.
 
-- Do not invent product features that are not mentioned in the input.
+- If information is missing, list it under Clarifying Questions.
 
-- If something is unclear, add it to Clarifying Questions.
+- Include positive, negative, and edge cases when possible.
 
-- Focus on user-facing behavior.
-
-- Include security-related cases only when they are relevant to the user story.
+- Keep test cases practical and realistic.
 
 - Use clear Markdown formatting.

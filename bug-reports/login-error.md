@@ -1,8 +1,12 @@
-# Login Error Bug Report Example
+# Login Error Bug Report
 
 ## Issue Description
 
+```text
+
 When I enter the correct email and password, I see an error message and cannot log in.
+
+```
 
 ## Prompt Used
 
@@ -14,19 +18,13 @@ Bug Report Prompt v1
 
 User cannot log in with correct email and password
 
----
-
 ## 2. Summary
 
-When the user enters the correct email and password, the system shows an error message and does not allow the user to log in.
-
----
+When the user enters a correct email and password, the system shows an error message and does not allow the user to log in. This prevents valid users from accessing their accounts.
 
 ## 3. Environment
 
 Not provided.
-
----
 
 ## 4. Preconditions
 
@@ -34,9 +32,7 @@ Not provided.
 
 - User is on the login page.
 
-- User enters the correct email and password.
-
----
+- User enters a correct email and password.
 
 ## 5. Steps to Reproduce
 
@@ -48,42 +44,34 @@ Not provided.
 
 4. Click the login button.
 
----
+5. Observe the result.
 
 ## 6. Actual Result
 
 The system shows an error message and the user cannot log in.
 
----
-
 ## 7. Expected Result
 
-The user should be logged in successfully and redirected to their account/dashboard page.
-
----
+The user should be logged in successfully and redirected to their account, dashboard, or expected post-login page.
 
 ## 8. Severity
 
 Major
 
----
-
 ## 9. Priority
 
 High
-
----
 
 ## 10. Notes / Missing Information
 
 - Exact error message is not provided.
 
-- Browser and device information are not provided.
-
 - Environment is not specified: production, staging, local, etc.
 
-- It is not clear whether the issue happens for one user or all users.
+- Browser and device information are not provided.
 
-- It is not clear whether the issue happens every time or only sometimes.
+- It is not clear whether the issue happens for all users or only one user.
 
-- No screenshot, video, console error, or network log is provided.
+- It is not clear whether the issue happens every time or intermittently.
+
+- Screenshot, video, console logs, or network logs are not provided.

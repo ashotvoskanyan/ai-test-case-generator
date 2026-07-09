@@ -1,8 +1,12 @@
-# Checkout Payment Failure Bug Report Example
+# Checkout Payment Failure Bug Report
 
 ## Issue Description
 
+```text
+
 When I try to complete checkout with my saved payment method, the payment fails but the order still appears as placed.
+
+```
 
 ## Prompt Used
 
@@ -14,19 +18,13 @@ Bug Report Prompt v1
 
 Order appears as placed after saved payment method fails
 
----
-
 ## 2. Summary
 
 When the user tries to complete checkout using a saved payment method, the payment fails, but the order still appears as placed. This creates an inconsistent checkout state where the order looks successful even though payment was not completed.
 
----
-
 ## 3. Environment
 
 Not provided.
-
----
 
 ## 4. Preconditions
 
@@ -37,8 +35,6 @@ Not provided.
 - User has a saved payment method.
 
 - User is on the checkout page.
-
----
 
 ## 5. Steps to Reproduce
 
@@ -56,31 +52,21 @@ Not provided.
 
 7. Check the order status or order confirmation state.
 
----
-
 ## 6. Actual Result
 
 The payment fails, but the order still appears as placed.
-
----
 
 ## 7. Expected Result
 
 If the payment fails, the order should not appear as successfully placed. The system should show a payment failure message and keep the order in a failed, pending, or unpaid state according to product rules.
 
----
-
 ## 8. Severity
 
 Critical
 
----
-
 ## 9. Priority
 
 High
-
----
 
 ## 10. Notes / Missing Information
 
