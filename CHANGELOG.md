@@ -42,6 +42,7 @@
 - Organized examples into a dedicated examples folder.
 - Added password reset user story example.
 - Added checkout user story example using Prompt v4.
+- Added previous prompt versions: [prompt-v1.md](http://prompt-v1.md), [prompt-v2.md](http://prompt-v2.md), and [prompt-v3.md](http://prompt-v3.md)
 
 
 

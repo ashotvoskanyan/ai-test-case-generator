@@ -18,6 +18,7 @@
 - [ ] Add severity field
 - [ ] Add test type field: functional, validation, security, usability
 - [x] Add a simple scoring system for prompt quality
+- [x] Create separate prompt version files
 
 ## Version 0.3 - First App Version
 

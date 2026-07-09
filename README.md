@@ -20,6 +20,8 @@ A user story or product requirement.
 
 ## Project Structure
 
+## Project Structure
+
 ```text
 
 ai-test-case-generator/
@@ -45,6 +47,12 @@ ai-test-case-generator/
 │   └── [checkout.md](http://checkout.md)
 
 └── prompts/
+
+    ├── [prompt-v1.md](http://prompt-v1.md)
+
+    ├── [prompt-v2.md](http://prompt-v2.md)
+
+    ├── [prompt-v3.md](http://prompt-v3.md)
 
     └── [prompt-v4.md](http://prompt-v4.md)
 
