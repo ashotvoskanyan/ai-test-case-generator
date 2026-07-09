@@ -35,15 +35,19 @@
 
 ## Version 0.2 - Better Project Structure
 
+
+
 ### Added
 
 - Organized examples into a dedicated examples folder.
-
 - Added password reset user story example.
+- Added checkout user story example using Prompt v4.
+
+
 
 ### Changed
 
 - Fixed [template.md](http://template.md) to be a reusable prompt template.
-
-
+- Removed old root-level [examples.md](http://examples.md) and [prompt.md](http://prompt.md) files after moving examples and prompts into dedicated folders. 
+- Updated [README.md](http://README.md) with the current project structure.
 

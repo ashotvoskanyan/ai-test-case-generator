@@ -13,7 +13,7 @@
 ## Version 0.2 - Better QA Output
 
 - [x] Add password reset user story example
-- [ ] Add checkout/payment user story example
+- [x] Add checkout/payment user story example
 - [x] Improve prompt to generate test cases in table format
 - [ ] Add severity field
 - [ ] Add test type field: functional, validation, security, usability

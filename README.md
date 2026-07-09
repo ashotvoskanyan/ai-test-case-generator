@@ -17,3 +17,34 @@ A user story or product requirement.
 - Negative test cases
 - Edge cases
 - Clarifying questions
+
+## Project Structure
+
+```text
+
+ai-test-case-generator/
+
+├── [README.md](http://README.md)
+
+├── [CHANGELOG.md](http://CHANGELOG.md)
+
+├── [TODO.md](http://TODO.md)
+
+├── [template.md](http://template.md)
+
+├── [scoring.md](http://scoring.md)
+
+├── examples/
+
+│   ├── [login.md](http://login.md)
+
+│   ├── [registration.md](http://registration.md)
+
+│   ├── [password-reset.md](http://password-reset.md)
+
+│   └── [checkout.md](http://checkout.md)
+
+└── prompts/
+
+    └── [prompt-v4.md](http://prompt-v4.md)
+
