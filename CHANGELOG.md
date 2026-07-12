@@ -11,6 +11,7 @@
 - Added expected status codes and response examples.
 - Added security checks for login API behavior.
 - Added API testing output scoring system.
+- Added registration API testing example.
 
 ### Changed
 

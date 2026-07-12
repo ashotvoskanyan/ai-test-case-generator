@@ -47,7 +47,7 @@
 
 - [x] Add API testing scoring criteria
 
-- [ ] Add more API testing examples
+- [x] Add more API testing examples
 
 - [ ] Improve API testing prompt
 

@@ -91,7 +91,7 @@ Completed:
 
 ## Project Structure
 
-```text 
+```text
 
 ai-test-case-generator/
 
@@ -111,7 +111,9 @@ ai-test-case-generator/
 
 ├── api-testing/
 
-│   └── [login-api.md](http://login-api.md)
+│   ├── [login-api.md](http://login-api.md)
+
+│   └── [registration-api.md](http://registration-api.md)
 
 ├── bug-reports/
 
@@ -143,7 +145,7 @@ ai-test-case-generator/
 
     └── [prompt-v4.md](http://prompt-v4.md)
 
- ```
+```
 
 ## Examples
 
@@ -176,6 +178,7 @@ API testing examples are stored in the `api-testing/` folder.
 Current API examples:
 
 - `api-testing/login-api.md` — login endpoint API testing example
+- `api-testing/registration-api.md` — registration API endpoint test cases
 
 
 
