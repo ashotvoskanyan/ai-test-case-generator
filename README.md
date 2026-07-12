@@ -17,27 +17,35 @@ This project uses reusable prompts to generate QA documentation such as:
 - Bug reports
 - API test cases
 - Prompt quality evaluations
+- Browser-based QA output prototypes
 
-The goal is to practice Manual QA, API testing, prompt engineering, AI-assisted testing, GitHub documentation, and basic project structure.
+The goal is to practice Manual QA, API testing, prompt engineering, AI-assisted testing, GitHub documentation, basic web development, and project structure.
 
 ## What This Project Does
 
-The project currently has three main workflows:
+The project currently has four main workflows:
 
 1. **Test Case Generator**
+
    Turns user stories or product requirements into structured QA test cases.
 
 2. **Bug Report Generator**
+
    Turns issue descriptions into structured bug reports.
 
 3. **API Test Generator**
+
    Turns API endpoint descriptions into structured API test cases.
+
+4. **Web App Prototype**
+
+   Provides a simple browser interface for entering a requirement and viewing generated QA output.
 
 ## Example Input
 
-~~~text
-As a user, I want to log in with my email and password so that I can access my account.
-~~~
+Example user story:
+
+> As a user, I want to log in with my email and password so that I can access my account.
 
 ## Example Output
 
@@ -64,11 +72,14 @@ This project demonstrates practical beginner-level skills in:
 - AI-assisted QA workflows
 - Markdown documentation
 - Git and GitHub
+- Basic HTML
+- Basic CSS
+- Basic JavaScript
 - Project structure and versioning
 
 ## Current Status
 
-Current version: Version 0.4 - API Testing Examples
+Current version: Version 0.5 - First Web App Version
 
 Completed:
 
@@ -85,6 +96,9 @@ Completed:
 - API testing output scoring system
 - Organized project structure
 - GitHub repository with commit history
+- First static web app prototype
+- Basic HTML, CSS, and JavaScript interface
+- Mock QA output generation in browser
 
 ## Project Structure
 
@@ -115,6 +129,10 @@ ai-test-case-generator/
 |   |-- prompt-v2.md
 |   |-- prompt-v3.md
 |   |-- prompt-v4.md
+|-- web-app/
+|   |-- index.html
+|   |-- style.css
+|   |-- script.js
 ~~~
 
 ## Examples
@@ -159,6 +177,25 @@ Current prompts:
 - `prompts/bug-report-prompt-v1.md` - structured bug report generator
 - `prompts/api-test-prompt-v1.md` - structured API test case generator
 
+## Web App Prototype
+
+The first web app prototype is stored in the `web-app/` folder.
+
+Current web app files:
+
+- `web-app/index.html` - page structure
+- `web-app/style.css` - page styling
+- `web-app/script.js` - browser interaction and mock QA output logic
+
+The prototype currently works without a real AI API.
+
+Current behavior:
+
+- User enters a requirement or user story.
+- User clicks the Generate QA Output button.
+- The page displays mock QA documentation.
+- Empty input shows a validation message.
+
 ## Prompt Versioning
 
 The test case prompt improved step by step:
@@ -184,10 +221,12 @@ These scoring files help check whether the AI output is clear, practical, comple
 
 Planned improvements:
 
+- Improve the web app interface
+- Add workflow selection for test cases, bug reports, and API tests
+- Improve the mock output format
 - Improve API testing prompt
 - Add API response validation examples
 - Add more complex user stories
 - Improve Prompt v4 based on scoring results
 - Add more bug report examples
-- Build a simple web interface
 - Connect the project to the OpenAI API
