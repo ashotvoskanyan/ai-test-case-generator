@@ -16,13 +16,21 @@
     </section>
 
     <section class="generator">
-      <label for="requirement">User Story or Requirement</label>
+      <label for="workflow">Workflow</label>
 
+      <select id="workflow">
+        <option value="test-cases">Test Cases</option>
+        <option value="bug-report">Bug Report</option>
+        <option value="api-tests">API Tests</option>
+      </select>
+      
+      <label for="requirement">Input</label>
+      
       <textarea
         id="requirement"
-        placeholder="Example: As a user, I want to log in with my email and password so that I can access my account."
+        placeholder="Paste a user story, bug description, or API endpoint description here."
       ></textarea>
-
+      
       <button id="generateButton">Generate QA Output</button>
     </section>
 

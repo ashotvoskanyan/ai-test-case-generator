@@ -54,6 +54,16 @@
     font-size: 16px;
     resize: vertical;
   }
+
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #ffffff;
+  }
   
   button {
     margin-top: 16px;
