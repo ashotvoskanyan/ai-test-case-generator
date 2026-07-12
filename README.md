@@ -66,8 +66,6 @@ This project demonstrates practical beginner-level skills in:
 - Git and GitHub
 - Project structure and versioning
 
-
-
 ## Current Status
 
 Current version: Version 0.4 - API Testing Examples
@@ -90,6 +88,8 @@ Completed:
 
 
 ## Project Structure
+
+
 
 ```text
 
