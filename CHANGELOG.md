@@ -17,6 +17,11 @@
 - Added workflow selection for Test Cases, Bug Report, and API Tests.
 - Added different mock outputs for each workflow.
 - Updated JavaScript logic to handle multiple QA workflows.
+- Added Copy Output button.
+- Added clipboard copy behavior for generated QA output.
+- Added temporary Copied! button state after copying.
+
+
 
 ### Learned
 

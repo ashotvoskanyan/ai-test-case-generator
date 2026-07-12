@@ -55,6 +55,7 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Add mock QA output generation
 - [x] Add workflow selection for test cases, bug reports, and API tests
 - [x] Improve mock output format
+- [x] Add copy output button
 - [ ] Update README.md
 - [ ] Update CHANGELOG.md
 

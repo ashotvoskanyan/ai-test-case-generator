@@ -179,6 +179,8 @@ Current behavior:
 
 - The page displays workflow-specific mock QA documentation.
 
+- User can copy the generated output with the Copy Output button.
+
 - Empty input shows a validation message.
 
 
