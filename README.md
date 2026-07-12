@@ -23,17 +23,20 @@ The goal is to practice Manual QA, prompt engineering, AI-assisted testing, GitH
 
 The project currently has two main workflows:
 
-1. **Test Case Generator**  
-   Turns user stories or product requirements into structured QA test cases.
+1. **Test Case Generator**
+  Turns user stories or product requirements into structured QA test cases.
+2. **Bug Report Generator**
+  Turns issue descriptions into structured bug reports.
 
-2. **Bug Report Generator**  
-   Turns issue descriptions into structured bug reports.
+
 
 ## Example Input
 
 ```text
 As a user, I want to log in with my email and password so that I can access my account.
 ```
+
+
 
 ## Example Output
 
@@ -46,6 +49,8 @@ The AI can generate:
 - Negative test cases
 - Edge cases
 - Clarifying questions
+
+
 
 ## Skills Demonstrated
 
@@ -61,9 +66,11 @@ This project demonstrates practical beginner-level skills in:
 - Git and GitHub
 - Project structure and versioning
 
+
+
 ## Current Status
 
-Current version: Version 0.3 - Bug Report Generator
+Current version: Version 0.4 - API Testing Examples
 
 Completed:
 
@@ -77,32 +84,66 @@ Completed:
 - Bug report quality scoring system
 - Organized project structure
 - GitHub repository with commit history
+- API testing prompt
+- Login API testing example
+
+
 
 ## Project Structure
 
 ```text
+
 ai-test-case-generator/
-├── README.md
-├── CHANGELOG.md
-├── TODO.md
-├── template.md
-├── scoring.md
-├── bug-report-scoring.md
+
+├── [README.md](http://README.md)
+
+├── [CHANGELOG.md](http://CHANGELOG.md)
+
+├── [TODO.md](http://TODO.md)
+
+├── [template.md](http://template.md)
+
+├── [scoring.md](http://scoring.md)
+
+├── [bug-report-scoring.md](http://bug-report-scoring.md)
+
+├── api-testing/
+
+│   └── [login-api.md](http://login-api.md)
+
 ├── bug-reports/
-│   ├── login-error.md
-│   └── checkout-payment-failure.md
+
+│   ├── [login-error.md](http://login-error.md)
+
+│   └── [checkout-payment-failure.md](http://checkout-payment-failure.md)
+
 ├── examples/
-│   ├── login.md
-│   ├── registration.md
-│   ├── password-reset.md
-│   └── checkout.md
+
+│   ├── [login.md](http://login.md)
+
+│   ├── [registration.md](http://registration.md)
+
+│   ├── [password-reset.md](http://password-reset.md)
+
+│   └── [checkout.md](http://checkout.md)
+
 └── prompts/
-    ├── bug-report-prompt-v1.md
-    ├── prompt-v1.md
-    ├── prompt-v2.md
-    ├── prompt-v3.md
-    └── prompt-v4.md
+
+    ├── [api-test-prompt-v1.md](http://api-test-prompt-v1.md)
+
+    ├── [bug-report-prompt-v1.md](http://bug-report-prompt-v1.md)
+
+    ├── [prompt-v1.md](http://prompt-v1.md)
+
+    ├── [prompt-v2.md](http://prompt-v2.md)
+
+    ├── [prompt-v3.md](http://prompt-v3.md)
+
+    └── [prompt-v4.md](http://prompt-v4.md)
+
 ```
+
+
 
 ## Examples
 
@@ -115,6 +156,8 @@ Current test case examples:
 - `examples/password-reset.md` — password reset user story
 - `examples/checkout.md` — checkout user story
 
+
+
 ## Bug Reports
 
 Bug report examples are stored in the `bug-reports/` folder.
@@ -123,6 +166,18 @@ Current bug report examples:
 
 - `bug-reports/login-error.md` — login error bug report
 - `bug-reports/checkout-payment-failure.md` — checkout payment failure bug report
+
+
+
+## API Testing
+
+API testing examples are stored in the `api-testing/` folder.
+
+Current API examples:
+
+- `api-testing/login-api.md` — login endpoint API testing example
+
+
 
 ## Prompts
 
@@ -135,6 +190,9 @@ Current prompts:
 - `prompts/prompt-v3.md` — test case table format
 - `prompts/prompt-v4.md` — advanced QA test case format
 - `prompts/bug-report-prompt-v1.md` — structured bug report generator
+- `prompts/api-test-prompt-v1.md` — structured API test case generator
+
+
 
 ## Prompt Versioning
 
@@ -160,10 +218,15 @@ These scoring files help check whether the AI output is clear, practical, comple
 
 Planned improvements:
 
-- Add API testing examples
-- Add API test prompt v1
 - Add more complex user stories
 - Improve Prompt v4 based on scoring results
 - Add more bug report examples
 - Build a simple web interface
 - Connect the project to the OpenAI API
+- Add registration API example
+- Add password reset API example
+- Add checkout API example
+- Improve API testing prompt
+- Build a simple web interface
+- Connect the project to the OpenAI API
+

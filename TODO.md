@@ -21,6 +21,8 @@
 - [x] Clean old root-level prompt and examples files
 - [x] Improve README project presentation
 
+
+
 ## Version 0.3 - Bug Report Generator
 
 - [x] Create bug report prompt
@@ -29,14 +31,27 @@
 - [x] Add bug report scoring criteria
 - [x] Update README, TODO, and CHANGELOG for bug report workflow
 
+
+
 ## Version 0.4 - API Testing Examples
 
-- [ ] Create API testing prompt
-- [ ] Add login API testing example
-- [ ] Add negative API test cases
-- [ ] Add status code expectations
-- [ ] Add request and response examples
+## Version 0.4 - API Testing Examples
+
+- [x] Create API testing prompt
+
+- [x] Add login API testing example
+
+- [x] Add negative API test cases
+
+- [x] Add status code expectations
+
+- [x] Add request and response examples
+
 - [ ] Add API testing scoring criteria
+
+- [ ] Add more API testing examples
+
+- [ ] Improve API testing prompt
 
 ## Version 0.5 - First Web App Version
 
@@ -46,6 +61,8 @@
 - [ ] Display generated QA output on the page
 - [ ] Add basic styling
 - [ ] Connect OpenAI API
+
+
 
 ## Future Ideas
 

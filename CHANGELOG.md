@@ -1,5 +1,45 @@
 # Changelog
 
+
+
+## Version 0.4 - API Testing Examples
+
+### Added
+
+- Added API testing prompt v1.
+
+- Added login API testing example.
+
+- Added API test cases for positive, negative, edge, and security scenarios.
+
+- Added request body examples for login API testing.
+
+- Added expected status codes and response examples.
+
+- Added security checks for login API behavior.
+
+### Changed
+
+- Updated [README.md](http://README.md) to include the API testing workflow.
+
+- Updated [TODO.md](http://TODO.md) with Version 0.4 progress.
+
+- Updated project structure documentation to include the `api-testing/` folder.
+
+### Learned
+
+- Basic structure of API testing.
+
+- Difference between request body and response body.
+
+- Basic usage of HTTP methods such as POST.
+
+- Basic usage of status codes such as 200, 400, and 401.
+
+- How API testing connects Manual QA with QA Automation.
+
+---
+
 ## Version 0.3 - Bug Report Generator
 
 ### Added
@@ -24,7 +64,11 @@
 
 ---
 
+
+
 ## Version 0.2 - Better Project Structure
+
+
 
 ### Added
 
@@ -34,6 +78,8 @@
 - Added checkout user story example using Prompt v4.
 - Added previous prompt versions: `prompt-v1.md`, `prompt-v2.md`, and `prompt-v3.md`.
 
+
+
 ### Changed
 
 - Organized examples into separate files.
@@ -41,6 +87,8 @@
 - Fixed `template.md` to be a reusable prompt template.
 - Removed old root-level `examples.md` and `prompt.md` files after moving content into dedicated folders.
 - Updated README.md with current project structure.
+
+
 
 ### Learned
 
@@ -51,7 +99,11 @@
 
 ---
 
+
+
 ## Version 0.1 - Manual Prompt MVP
+
+
 
 ### Added
 
@@ -65,6 +117,8 @@
 - Added prompt quality scoring system.
 - Pushed the initial project to GitHub.
 
+
+
 ### Learned
 
 - Basic project file structure.
@@ -74,9 +128,12 @@
 - How AI can generate QA test scenarios, test cases, edge cases, and clarifying questions.
 - Basic Git and GitHub workflow: status, add, commit, push.
 
+
+
 ### Next
 
 - Add more advanced QA examples.
 - Improve prompt formats.
 - Add new QA workflows.
 - Build toward a simple web app.
+
