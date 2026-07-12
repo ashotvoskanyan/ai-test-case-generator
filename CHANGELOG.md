@@ -1,138 +1,107 @@
 # Changelog
 
+## Version 0.5 - First Web App Version
+
+### Added
+
+- Added first static web app prototype.
+- Added `web-app/index.html`.
+- Added `web-app/style.css`.
+- Added `web-app/script.js`.
+- Added textarea input for user stories and requirements.
+- Added Generate QA Output button.
+- Added mock QA output display in the browser.
+- Added empty input validation message.
+- Added basic page styling.
+- Added basic JavaScript interaction.
+
+### Learned
+
+- Basic role of HTML in page structure.
+- Basic role of CSS in page styling.
+- Basic role of JavaScript in browser interaction.
+- How to connect an input field, a button, and an output area.
+- Why a mock prototype is useful before connecting a real API.
+
+---
+
 ## Version 0.4 - API Testing Examples
 
 ### Added
 
 - Added API testing prompt v1.
+- Added `api-testing/` folder.
 - Added login API testing example.
-- Added API test cases for positive, negative, edge, and security scenarios.
-- Added request body examples for login API testing.
-- Added expected status codes and response examples.
-- Added security checks for login API behavior.
-- Added API testing output scoring system.
 - Added registration API testing example.
-
-### Changed
-
-- Updated [README.md](http://README.md) to include the API testing workflow.
-- Updated [TODO.md](http://TODO.md) with Version 0.4 progress.
-- Updated project structure documentation to include the `api-testing/` folder.
-
-
+- Added API testing output scoring system.
+- Updated README.md to include API testing workflow.
+- Updated project structure documentation.
 
 ### Learned
 
-- Basic structure of API testing.
-- Difference between request body and response body.
-- Basic usage of HTTP methods such as POST.
-- Basic usage of status codes such as 200, 400, and 401.
-- How API testing connects Manual QA with QA Automation.
+- How API testing differs from UI testing.
+- How to write positive, negative, edge, and security API test cases.
+- How to evaluate API testing output quality.
+- How expected status codes depend on product requirements and backend rules.
 
 ---
-
-
 
 ## Version 0.3 - Bug Report Generator
 
-
-
 ### Added
 
-- Added bug report generator prompt.
+- Added bug report prompt v1.
+- Added `bug-reports/` folder.
 - Added login error bug report example.
 - Added checkout payment failure bug report example.
-- Added bug report quality scoring system.
-
-
-
-### Changed
-
-- Updated README.md to include the bug report workflow.
-- Updated TODO.md with Version 0.3 progress.
-- Updated project structure documentation.
-
-
+- Added bug report scoring system.
+- Updated README.md to include bug report workflow.
 
 ### Learned
 
-- How to structure bug reports.
-- Difference between Actual Result and Expected Result.
-- Basic usage of Severity and Priority in QA reporting.
-- How to extend an AI QA project with a second workflow.
+- How to turn issue descriptions into structured bug reports.
+- How to separate actual result from expected result.
+- How to use severity and priority in bug reports.
+- How to evaluate bug report quality.
 
 ---
-
-
 
 ## Version 0.2 - Better Project Structure
 
-
-
 ### Added
 
-- Added `examples/` folder.
 - Added `prompts/` folder.
-- Added password reset user story example.
-- Added checkout user story example using Prompt v4.
-- Added previous prompt versions: `prompt-v1.md`, `prompt-v2.md`, and `prompt-v3.md`.
-
-
-
-### Changed
-
-- Organized examples into separate files.
-- Organized prompt versions in the `prompts/` folder.
-- Fixed `template.md` to be a reusable prompt template.
-- Removed old root-level `examples.md` and `prompt.md` files after moving content into dedicated folders.
-- Updated README.md with current project structure.
-
-
+- Added `examples/` folder.
+- Added prompt versions v1-v4.
+- Added reusable QA prompt template.
+- Added more QA output examples.
+- Added TODO.md.
+- Added CHANGELOG.md.
+- Added scoring.md.
 
 ### Learned
 
-- How to organize project files into folders.
-- How to keep examples separate and easier to maintain.
-- How to use prompt versioning.
-- How to clean up old project files safely.
+- How to organize a small QA project.
+- How prompt versions show improvement over time.
+- How examples make a portfolio project easier to understand.
+- How scoring can be used to evaluate AI-generated QA output.
 
 ---
 
-
-
 ## Version 0.1 - Manual Prompt MVP
-
-
 
 ### Added
 
-- Created the initial project structure.
-- Added README.md with project description.
-- Added reusable QA prompt template.
-- Added prompt versions v1, v2, and v3 during early development.
-- Added login user story examples.
-- Added registration user story example.
-- Added structured QA testing documentation from user stories.
-- Added prompt quality scoring system.
-- Pushed the initial project to GitHub.
-
-
+- Created first project version.
+- Added README.md.
+- Added first manual QA prompt.
+- Added first login test case example.
+- Created GitHub repository.
+- Pushed first version to GitHub.
 
 ### Learned
 
-- Basic project file structure.
-- How to write a simple README.
-- How to store prompts in a project.
-- How to compare a basic prompt with improved prompts.
-- How AI can generate QA test scenarios, test cases, edge cases, and clarifying questions.
-- Basic Git and GitHub workflow: status, add, commit, push.
-
-
-
-### Next
-
-- Add more advanced QA examples.
-- Improve prompt formats.
-- Add new QA workflows.
-- Build toward a simple web app.
-
+- How to start a simple AI-assisted QA project.
+- How to document a project in Markdown.
+- How to use basic Git commands.
+- How to publish a project on GitHub.

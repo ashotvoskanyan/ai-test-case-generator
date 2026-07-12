@@ -1,74 +1,76 @@
 # TODO
 
+This file tracks planned improvements for the AI Test Case Generator project.
+
 ## Version 0.1 - Manual Prompt MVP
 
+- [x] Create the first basic QA prompt
+- [x] Add example output for login user story
 - [x] Create README.md
-- [x] Create reusable QA prompt template
-- [x] Create test case examples
-- [x] Create CHANGELOG.md
-- [x] Create TODO.md
-- [x] Create prompt quality scoring system
-- [x] Push initial project to GitHub
+- [x] Create GitHub repository
+- [x] Push the first version to GitHub
 
 ## Version 0.2 - Better Project Structure
 
-- [x] Create `examples/` folder
-- [x] Move test case examples into separate files
-- [x] Create `prompts/` folder
+- [x] Create prompts folder
+- [x] Create examples folder
 - [x] Add prompt versions v1-v4
-- [x] Add password reset user story example
-- [x] Add checkout/payment user story example
-- [x] Clean old root-level prompt and examples files
-- [x] Improve README project presentation
-
-
+- [x] Add reusable QA prompt template
+- [x] Add more test case examples
+- [x] Add CHANGELOG.md
+- [x] Add TODO.md
 
 ## Version 0.3 - Bug Report Generator
 
 - [x] Create bug report prompt
+- [x] Add bug-reports folder
 - [x] Add login error bug report example
 - [x] Add checkout payment failure bug report example
-- [x] Add bug report scoring criteria
-- [x] Update README, TODO, and CHANGELOG for bug report workflow
-
-
+- [x] Add bug report scoring system
+- [x] Update README.md
+- [x] Update CHANGELOG.md
 
 ## Version 0.4 - API Testing Examples
 
 - [x] Create API testing prompt
-
+- [x] Add api-testing folder
 - [x] Add login API testing example
-
-- [x] Add negative API test cases
-
-- [x] Add status code expectations
-
-- [x] Add request and response examples
-
-- [x] Add API testing scoring criteria
-
-- [x] Add more API testing examples
-
-- [ ] Improve API testing prompt
-
-
+- [x] Add registration API testing example
+- [x] Add API testing scoring system
+- [x] Update README.md
+- [x] Update CHANGELOG.md
 
 ## Version 0.5 - First Web App Version
 
-- [ ] Create a simple web page
-- [ ] Add input field for user story
-- [ ] Add Generate button
-- [ ] Display generated QA output on the page
-- [ ] Add basic styling
-- [ ] Connect OpenAI API
+- [x] Create a simple web page
+- [x] Add input field for user story or requirement
+- [x] Add Generate button
+- [x] Display generated QA output on the page
+- [x] Add basic styling
+- [x] Add basic JavaScript interaction
+- [x] Add mock QA output generation
+- [ ] Add workflow selection for test cases, bug reports, and API tests
+- [ ] Improve mock output format
+- [ ] Update README.md
+- [ ] Update CHANGELOG.md
 
+## Version 0.6 - OpenAI API Integration
 
+- [ ] Create a simple backend
+- [ ] Add OpenAI API connection
+- [ ] Send user input to the API
+- [ ] Display real AI-generated QA output
+- [ ] Hide API key using environment variables
+- [ ] Add basic error handling
 
-## Future Ideas
+## Future Improvements
 
-- [ ] Add bug report generator to web app
-- [ ] Add API test generator to web app
+- [ ] Add more complex user stories
+- [ ] Add more API testing examples
+- [ ] Add more bug report examples
+- [ ] Add response validation examples
+- [ ] Improve Prompt v4 based on scoring results
 - [ ] Add export to Markdown
-- [ ] Add export to CSV
+- [ ] Add copy output button
 - [ ] Add saved examples
-- [ ] Add simple prompt comparison
+- [ ] Deploy the web app online
