@@ -91,7 +91,7 @@ Completed:
 
 ## Project Structure
 
-```text
+```text 
 
 ai-test-case-generator/
 
@@ -106,6 +106,8 @@ ai-test-case-generator/
 ├── [scoring.md](http://scoring.md)
 
 ├── [bug-report-scoring.md](http://bug-report-scoring.md)
+
+├── [api-testing-scoring.md](http://api-testing-scoring.md)
 
 ├── api-testing/
 
@@ -141,9 +143,7 @@ ai-test-case-generator/
 
     └── [prompt-v4.md](http://prompt-v4.md)
 
-```
-
-
+ ```
 
 ## Examples
 
@@ -207,10 +207,11 @@ This shows how the AI output became more structured and more useful for real QA 
 
 ## Quality Scoring
 
-The project includes two simple scoring systems:
+The project includes three simple scoring systems:
 
 - `scoring.md` — evaluates AI-generated QA test case documentation
 - `bug-report-scoring.md` — evaluates AI-generated bug reports
+- `api-testing-scoring.md` — evaluates AI-generated API testing documentation
 
 These scoring files help check whether the AI output is clear, practical, complete, and useful for real QA work.
 

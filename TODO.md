@@ -35,8 +35,6 @@
 
 ## Version 0.4 - API Testing Examples
 
-## Version 0.4 - API Testing Examples
-
 - [x] Create API testing prompt
 
 - [x] Add login API testing example
@@ -47,11 +45,13 @@
 
 - [x] Add request and response examples
 
-- [ ] Add API testing scoring criteria
+- [x] Add API testing scoring criteria
 
 - [ ] Add more API testing examples
 
 - [ ] Improve API testing prompt
+
+
 
 ## Version 0.5 - First Web App Version
 
