@@ -91,61 +91,34 @@ Completed:
 
 ## Project Structure
 
-```text
-
+~~~text
 ai-test-case-generator/
-
-|-- [README.md](http://README.md)
-
-|-- [CHANGELOG.md](http://CHANGELOG.md)
-
-|-- [TODO.md](http://TODO.md)
-
-|-- [template.md](http://template.md)
-
-|-- [scoring.md](http://scoring.md)
-
-|-- [bug-report-scoring.md](http://bug-report-scoring.md)
-
-|-- [api-testing-scoring.md](http://api-testing-scoring.md)
-
+|-- README.md
+|-- CHANGELOG.md
+|-- TODO.md
+|-- template.md
+|-- scoring.md
+|-- bug-report-scoring.md
+|-- api-testing-scoring.md
 |-- api-testing/
-
-|   |-- [login-api.md](http://login-api.md)
-
-|   `-- [registration-api.md](http://registration-api.md)
-
+|   |-- login-api.md
+|   |-- registration-api.md
 |-- bug-reports/
-
-|   |-- [login-error.md](http://login-error.md)
-
-|   `-- [checkout-payment-failure.md](http://checkout-payment-failure.md)
-
+|   |-- login-error.md
+|   |-- checkout-payment-failure.md
 |-- examples/
-
-|   |-- [login.md](http://login.md)
-
-|   |-- [registration.md](http://registration.md)
-
-|   |-- [password-reset.md](http://password-reset.md)
-
-|   `-- [checkout.md](http://checkout.md)
-
-`-- prompts/
-
-    |-- [api-test-prompt-v1.md](http://api-test-prompt-v1.md)
-
-    |-- [bug-report-prompt-v1.md](http://bug-report-prompt-v1.md)
-
-    |-- [prompt-v1.md](http://prompt-v1.md)
-
-    |-- [prompt-v2.md](http://prompt-v2.md)
-
-    |-- [prompt-v3.md](http://prompt-v3.md)
-
-    `-- [prompt-v4.md](http://prompt-v4.md)
-
-```
+|   |-- login.md
+|   |-- registration.md
+|   |-- password-reset.md
+|   |-- checkout.md
+|-- prompts/
+|   |-- api-test-prompt-v1.md
+|   |-- bug-report-prompt-v1.md
+|   |-- prompt-v1.md
+|   |-- prompt-v2.md
+|   |-- prompt-v3.md
+|   |-- prompt-v4.md
+~~~
 
 ## Examples
 
@@ -153,10 +126,10 @@ QA test case examples are stored in the `examples/` folder.
 
 Current test case examples:
 
-- `examples/login.md` â€” login user story
-- `examples/registration.md` â€” registration user story
-- `examples/password-reset.md` â€” password reset user story
-- `examples/checkout.md` â€” checkout user story
+- `examples/login.md` Ã¢â‚¬â€ login user story
+- `examples/registration.md` Ã¢â‚¬â€ registration user story
+- `examples/password-reset.md` Ã¢â‚¬â€ password reset user story
+- `examples/checkout.md` Ã¢â‚¬â€ checkout user story
 
 
 
@@ -166,8 +139,8 @@ Bug report examples are stored in the `bug-reports/` folder.
 
 Current bug report examples:
 
-- `bug-reports/login-error.md` â€” login error bug report
-- `bug-reports/checkout-payment-failure.md` â€” checkout payment failure bug report
+- `bug-reports/login-error.md` Ã¢â‚¬â€ login error bug report
+- `bug-reports/checkout-payment-failure.md` Ã¢â‚¬â€ checkout payment failure bug report
 
 
 
@@ -177,8 +150,8 @@ API testing examples are stored in the `api-testing/` folder.
 
 Current API examples:
 
-- `api-testing/login-api.md` â€” login endpoint API testing example
-- `api-testing/registration-api.md` â€” registration API endpoint test cases
+- `api-testing/login-api.md` Ã¢â‚¬â€ login endpoint API testing example
+- `api-testing/registration-api.md` Ã¢â‚¬â€ registration API endpoint test cases
 
 
 
@@ -188,12 +161,12 @@ Prompt versions are stored in the `prompts/` folder.
 
 Current prompts:
 
-- `prompts/prompt-v1.md` â€” basic QA prompt
-- `prompts/prompt-v2.md` â€” structured QA documentation
-- `prompts/prompt-v3.md` â€” test case table format
-- `prompts/prompt-v4.md` â€” advanced QA test case format
-- `prompts/bug-report-prompt-v1.md` â€” structured bug report generator
-- `prompts/api-test-prompt-v1.md` â€” structured API test case generator
+- `prompts/prompt-v1.md` Ã¢â‚¬â€ basic QA prompt
+- `prompts/prompt-v2.md` Ã¢â‚¬â€ structured QA documentation
+- `prompts/prompt-v3.md` Ã¢â‚¬â€ test case table format
+- `prompts/prompt-v4.md` Ã¢â‚¬â€ advanced QA test case format
+- `prompts/bug-report-prompt-v1.md` Ã¢â‚¬â€ structured bug report generator
+- `prompts/api-test-prompt-v1.md` Ã¢â‚¬â€ structured API test case generator
 
 
 
@@ -201,10 +174,10 @@ Current prompts:
 
 The test case prompt improved step by step:
 
-1. **Prompt v1** â€” basic QA output
-2. **Prompt v2** â€” structured QA documentation
-3. **Prompt v3** â€” Markdown table test case format
-4. **Prompt v4** â€” advanced QA format with Type, Test Level, Severity, and Status
+1. **Prompt v1** Ã¢â‚¬â€ basic QA output
+2. **Prompt v2** Ã¢â‚¬â€ structured QA documentation
+3. **Prompt v3** Ã¢â‚¬â€ Markdown table test case format
+4. **Prompt v4** Ã¢â‚¬â€ advanced QA format with Type, Test Level, Severity, and Status
 
 This shows how the AI output became more structured and more useful for real QA work.
 
@@ -212,9 +185,9 @@ This shows how the AI output became more structured and more useful for real QA 
 
 The project includes three simple scoring systems:
 
-- `scoring.md` â€” evaluates AI-generated QA test case documentation
-- `bug-report-scoring.md` â€” evaluates AI-generated bug reports
-- `api-testing-scoring.md` â€” evaluates AI-generated API testing documentation
+- `scoring.md` Ã¢â‚¬â€ evaluates AI-generated QA test case documentation
+- `bug-report-scoring.md` Ã¢â‚¬â€ evaluates AI-generated bug reports
+- `api-testing-scoring.md` Ã¢â‚¬â€ evaluates AI-generated API testing documentation
 
 These scoring files help check whether the AI output is clear, practical, complete, and useful for real QA work.
 
@@ -233,4 +206,5 @@ Planned improvements:
 - Improve API testing prompt
 - Build a simple web interface
 - Connect the project to the OpenAI API
+
 
