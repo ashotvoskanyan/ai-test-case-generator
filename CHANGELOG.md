@@ -14,6 +14,9 @@
 - Added empty input validation message.
 - Added basic page styling.
 - Added basic JavaScript interaction.
+- Added workflow selection for Test Cases, Bug Report, and API Tests.
+- Added different mock outputs for each workflow.
+- Updated JavaScript logic to handle multiple QA workflows.
 
 ### Learned
 
@@ -25,7 +28,11 @@
 
 ---
 
+
+
 ## Version 0.4 - API Testing Examples
+
+
 
 ### Added
 
@@ -37,6 +44,8 @@
 - Updated README.md to include API testing workflow.
 - Updated project structure documentation.
 
+
+
 ### Learned
 
 - How API testing differs from UI testing.
@@ -46,7 +55,11 @@
 
 ---
 
+
+
 ## Version 0.3 - Bug Report Generator
+
+
 
 ### Added
 
@@ -57,6 +70,8 @@
 - Added bug report scoring system.
 - Updated README.md to include bug report workflow.
 
+
+
 ### Learned
 
 - How to turn issue descriptions into structured bug reports.
@@ -66,7 +81,11 @@
 
 ---
 
+
+
 ## Version 0.2 - Better Project Structure
+
+
 
 ### Added
 
@@ -79,6 +98,8 @@
 - Added CHANGELOG.md.
 - Added scoring.md.
 
+
+
 ### Learned
 
 - How to organize a small QA project.
@@ -88,7 +109,11 @@
 
 ---
 
+
+
 ## Version 0.1 - Manual Prompt MVP
+
+
 
 ### Added
 
@@ -99,9 +124,12 @@
 - Created GitHub repository.
 - Pushed first version to GitHub.
 
+
+
 ### Learned
 
 - How to start a simple AI-assisted QA project.
 - How to document a project in Markdown.
 - How to use basic Git commands.
 - How to publish a project on GitHub.
+

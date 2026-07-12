@@ -30,6 +30,8 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Update README.md
 - [x] Update CHANGELOG.md
 
+
+
 ## Version 0.4 - API Testing Examples
 
 - [x] Create API testing prompt
@@ -40,6 +42,8 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Update README.md
 - [x] Update CHANGELOG.md
 
+
+
 ## Version 0.5 - First Web App Version
 
 - [x] Create a simple web page
@@ -49,10 +53,12 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Add basic styling
 - [x] Add basic JavaScript interaction
 - [x] Add mock QA output generation
-- [ ] Add workflow selection for test cases, bug reports, and API tests
-- [ ] Improve mock output format
+- [x] Add workflow selection for test cases, bug reports, and API tests
+- [x] Improve mock output format
 - [ ] Update README.md
 - [ ] Update CHANGELOG.md
+
+
 
 ## Version 0.6 - OpenAI API Integration
 
@@ -62,6 +68,8 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [ ] Display real AI-generated QA output
 - [ ] Hide API key using environment variables
 - [ ] Add basic error handling
+
+
 
 ## Future Improvements
 

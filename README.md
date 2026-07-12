@@ -26,26 +26,23 @@ The goal is to practice Manual QA, API testing, prompt engineering, AI-assisted 
 The project currently has four main workflows:
 
 1. **Test Case Generator**
-
-   Turns user stories or product requirements into structured QA test cases.
-
+  Turns user stories or product requirements into structured QA test cases.
 2. **Bug Report Generator**
-
-   Turns issue descriptions into structured bug reports.
-
+  Turns issue descriptions into structured bug reports.
 3. **API Test Generator**
-
-   Turns API endpoint descriptions into structured API test cases.
-
+  Turns API endpoint descriptions into structured API test cases.
 4. **Web App Prototype**
+  Provides a simple browser interface for entering a requirement and viewing generated QA output.
 
-   Provides a simple browser interface for entering a requirement and viewing generated QA output.
+
 
 ## Example Input
 
 Example user story:
 
 > As a user, I want to log in with my email and password so that I can access my account.
+
+
 
 ## Example Output
 
@@ -58,6 +55,8 @@ The AI can generate:
 - Negative test cases
 - Edge cases
 - Clarifying questions
+
+
 
 ## Skills Demonstrated
 
@@ -76,6 +75,8 @@ This project demonstrates practical beginner-level skills in:
 - Basic CSS
 - Basic JavaScript
 - Project structure and versioning
+
+
 
 ## Current Status
 
@@ -100,40 +101,11 @@ Completed:
 - Basic HTML, CSS, and JavaScript interface
 - Mock QA output generation in browser
 
+
+
 ## Project Structure
 
-~~~text
-ai-test-case-generator/
-|-- README.md
-|-- CHANGELOG.md
-|-- TODO.md
-|-- template.md
-|-- scoring.md
-|-- bug-report-scoring.md
-|-- api-testing-scoring.md
-|-- api-testing/
-|   |-- login-api.md
-|   |-- registration-api.md
-|-- bug-reports/
-|   |-- login-error.md
-|   |-- checkout-payment-failure.md
-|-- examples/
-|   |-- login.md
-|   |-- registration.md
-|   |-- password-reset.md
-|   |-- checkout.md
-|-- prompts/
-|   |-- api-test-prompt-v1.md
-|   |-- bug-report-prompt-v1.md
-|   |-- prompt-v1.md
-|   |-- prompt-v2.md
-|   |-- prompt-v3.md
-|   |-- prompt-v4.md
-|-- web-app/
-|   |-- index.html
-|   |-- style.css
-|   |-- script.js
-~~~
+
 
 ## Examples
 
@@ -146,6 +118,8 @@ Current test case examples:
 - `examples/password-reset.md` - password reset user story
 - `examples/checkout.md` - checkout user story
 
+
+
 ## Bug Reports
 
 Bug report examples are stored in the `bug-reports/` folder.
@@ -155,6 +129,8 @@ Current bug report examples:
 - `bug-reports/login-error.md` - login error bug report
 - `bug-reports/checkout-payment-failure.md` - checkout payment failure bug report
 
+
+
 ## API Testing Examples
 
 API testing examples are stored in the `api-testing/` folder.
@@ -163,6 +139,8 @@ Current API testing examples:
 
 - `api-testing/login-api.md` - login endpoint API testing example
 - `api-testing/registration-api.md` - registration API endpoint test cases
+
+
 
 ## Prompts
 
@@ -176,6 +154,8 @@ Current prompts:
 - `prompts/prompt-v4.md` - advanced QA test case format
 - `prompts/bug-report-prompt-v1.md` - structured bug report generator
 - `prompts/api-test-prompt-v1.md` - structured API test case generator
+
+
 
 ## Web App Prototype
 
@@ -191,10 +171,17 @@ The prototype currently works without a real AI API.
 
 Current behavior:
 
-- User enters a requirement or user story.
+- User selects a workflow: Test Cases, Bug Report, or API Tests.
+
+- User enters a requirement, bug description, or API endpoint description.
+
 - User clicks the Generate QA Output button.
-- The page displays mock QA documentation.
+
+- The page displays workflow-specific mock QA documentation.
+
 - Empty input shows a validation message.
+
+
 
 ## Prompt Versioning
 
@@ -230,3 +217,4 @@ Planned improvements:
 - Improve Prompt v4 based on scoring results
 - Add more bug report examples
 - Connect the project to the OpenAI API
+
