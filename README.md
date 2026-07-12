@@ -66,6 +66,8 @@ This project demonstrates practical beginner-level skills in:
 - Git and GitHub
 - Project structure and versioning
 
+
+
 ## Current Status
 
 Current version: Version 0.4 - API Testing Examples
@@ -89,61 +91,59 @@ Completed:
 
 ## Project Structure
 
-
-
 ```text
 
 ai-test-case-generator/
 
-â”œâ”€â”€ README.md
+|-- [README.md](http://README.md)
 
-â”œâ”€â”€ CHANGELOG.md
+|-- [CHANGELOG.md](http://CHANGELOG.md)
 
-â”œâ”€â”€ TODO.md
+|-- [TODO.md](http://TODO.md)
 
-â”œâ”€â”€ template.md
+|-- [template.md](http://template.md)
 
-â”œâ”€â”€ scoring.md
+|-- [scoring.md](http://scoring.md)
 
-â”œâ”€â”€ bug-report-scoring.md
+|-- [bug-report-scoring.md](http://bug-report-scoring.md)
 
-â”œâ”€â”€ api-testing-scoring.md
+|-- [api-testing-scoring.md](http://api-testing-scoring.md)
 
-â”œâ”€â”€ api-testing/
+|-- api-testing/
 
-â”‚   â”œâ”€â”€ login-api.md
+|   |-- [login-api.md](http://login-api.md)
 
-â”‚   â””â”€â”€ registration-api.md
+|   `-- [registration-api.md](http://registration-api.md)
 
-â”œâ”€â”€ bug-reports/
+|-- bug-reports/
 
-â”‚   â”œâ”€â”€ login-error.md
+|   |-- [login-error.md](http://login-error.md)
 
-â”‚   â””â”€â”€ checkout-payment-failure.md
+|   `-- [checkout-payment-failure.md](http://checkout-payment-failure.md)
 
-â”œâ”€â”€ examples/
+|-- examples/
 
-â”‚   â”œâ”€â”€ login.md
+|   |-- [login.md](http://login.md)
 
-â”‚   â”œâ”€â”€ registration.md
+|   |-- [registration.md](http://registration.md)
 
-â”‚   â”œâ”€â”€ password-reset.md
+|   |-- [password-reset.md](http://password-reset.md)
 
-â”‚   â””â”€â”€ checkout.md
+|   `-- [checkout.md](http://checkout.md)
 
-â””â”€â”€ prompts/
+`-- prompts/
 
-    â”œâ”€â”€ api-test-prompt-v1.md
+    |-- [api-test-prompt-v1.md](http://api-test-prompt-v1.md)
 
-    â”œâ”€â”€ bug-report-prompt-v1.md
+    |-- [bug-report-prompt-v1.md](http://bug-report-prompt-v1.md)
 
-    â”œâ”€â”€ prompt-v1.md
+    |-- [prompt-v1.md](http://prompt-v1.md)
 
-    â”œâ”€â”€ prompt-v2.md
+    |-- [prompt-v2.md](http://prompt-v2.md)
 
-    â”œâ”€â”€ prompt-v3.md
+    |-- [prompt-v3.md](http://prompt-v3.md)
 
-    â””â”€â”€ prompt-v4.md
+    `-- [prompt-v4.md](http://prompt-v4.md)
 
 ```
 
@@ -233,5 +233,4 @@ Planned improvements:
 - Improve API testing prompt
 - Build a simple web interface
 - Connect the project to the OpenAI API
-
 
