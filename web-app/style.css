@@ -93,3 +93,24 @@
     border-radius: 8px;
     overflow-x: auto;
   }
+
+  .output-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .output-header h2 {
+    margin: 0;
+  }
+  
+  #copyButton {
+    margin-top: 0;
+    background: #374151;
+  }
+  
+  #copyButton:hover {
+    background: #1f2937;
+  }

@@ -2,6 +2,7 @@ const workflowSelect = document.getElementById("workflow");
 const requirementInput = document.getElementById("requirement");
 const generateButton = document.getElementById("generateButton");
 const resultOutput = document.getElementById("result");
+const copyButton = document.getElementById("copyButton");
 
 generateButton.addEventListener("click", function () {
   const workflow = workflowSelect.value;
@@ -113,3 +114,19 @@ Security Checks:
 Original API Description:
 ${input}`;
 }
+
+copyButton.addEventListener("click", function () {
+  const outputText = resultOutput.textContent.trim();
+
+  if (!outputText || outputText === "Your generated QA output will appear here.") {
+    return;
+  }
+
+  navigator.clipboard.writeText(outputText);
+
+  copyButton.textContent = "Copied!";
+
+  setTimeout(function () {
+    copyButton.textContent = "Copy Output";
+  }, 1500);
+});
