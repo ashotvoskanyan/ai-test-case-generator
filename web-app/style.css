@@ -1,116 +1,194 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    color: #1f2937;
-  }
-  
-  .app {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-  }
-  
-  .hero {
-    margin-bottom: 24px;
-  }
-  
-  .hero h1 {
-    margin-bottom: 8px;
-    font-size: 36px;
-  }
-  
-  .hero p {
-    margin: 0;
-    color: #4b5563;
-    font-size: 18px;
-  }
-  
-  .generator,
-  .output {
-    background: #ffffff;
-    border: 1px solid #d1d5db;
-    border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 24px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  textarea {
-    width: 100%;
-    min-height: 160px;
-    padding: 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-size: 16px;
-    resize: vertical;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: 36px;
+}
+
+.hero p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 17px;
+}
+
+.input-card,
+.output-card {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+select,
+textarea {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.output-header h2 {
+  margin: 0;
+}
+
+#copyButton {
+  background: #111827;
+}
+
+#copyButton:hover {
+  background: #374151;
+}
+
+.result-output {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 220px;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+.result-output h1,
+.result-output h2,
+.result-output h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.result-output h1:first-child,
+.result-output h2:first-child,
+.result-output h3:first-child {
+  margin-top: 0;
+}
+
+.result-output p {
+  margin: 0 0 12px;
+}
+
+.result-output ul,
+.result-output ol {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+.result-output table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+.result-output th,
+.result-output td {
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.result-output th {
+  background: #e5e7eb;
+  font-weight: bold;
+}
+
+.result-output tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.result-output code {
+  background: #e5e7eb;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .app-container {
+    padding: 20px 12px;
   }
 
-  select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-size: 16px;
-    background: #ffffff;
-  }
-  
-  button {
-    margin-top: 16px;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 8px;
-    background: #2563eb;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #1d4ed8;
-  }
-  
-  .output h2 {
-    margin-top: 0;
-  }
-  
-  pre {
-    white-space: pre-wrap;
-    background: #111827;
-    color: #f9fafb;
-    padding: 16px;
-    border-radius: 8px;
-    overflow-x: auto;
+  .hero h1 {
+    font-size: 28px;
   }
 
   .output-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 16px;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .output-header h2 {
-    margin: 0;
+
+  button {
+    width: 100%;
   }
-  
-  #copyButton {
-    margin-top: 0;
-    background: #374151;
+
+  .result-output table {
+    font-size: 13px;
   }
-  
-  #copyButton:hover {
-    background: #1f2937;
-  }
+}

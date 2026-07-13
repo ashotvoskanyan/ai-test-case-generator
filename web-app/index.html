@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Test Case Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="app">
+  <main class="app-container">
     <section class="hero">
       <h1>AI Test Case Generator</h1>
       <p>
-        Paste a user story or requirement and generate structured QA test cases.
+        Generate structured QA test cases, bug reports, and API test cases from product requirements.
       </p>
     </section>
 
-    <section class="generator">
-      <label for="workflow">Workflow</label>
-
+    <section class="input-card">
+      <label for="workflow">Choose workflow</label>
       <select id="workflow">
         <option value="test-cases">Test Cases</option>
         <option value="bug-report">Bug Report</option>
         <option value="api-tests">API Tests</option>
       </select>
-      
-      <label for="requirement">Input</label>
-      
+
+      <label for="requirement">Enter requirement, bug description, or API description</label>
       <textarea
         id="requirement"
-        placeholder="Paste a user story, bug description, or API endpoint description here."
+        placeholder="Example: As a user, I want to reset my password using my email so that I can regain access to my account."
       ></textarea>
-      
+
       <button id="generateButton">Generate QA Output</button>
     </section>
 
-    <section class="output">
+    <section class="output-card">
       <div class="output-header">
-        <h2>Generated QA Output</h2>
-        <button id="copyButton" type="button">Copy Output</button>
+        <h2>Generated Output</h2>
+        <button id="copyButton">Copy Output</button>
       </div>
-    
-      <pre id="result">Your generated QA output will appear here.</pre>
+
+      <div id="result" class="result-output">
+        Your generated QA output will appear here.
+      </div>
     </section>
-    
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

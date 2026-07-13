@@ -4,12 +4,15 @@ const generateButton = document.getElementById("generateButton");
 const resultOutput = document.getElementById("result");
 const copyButton = document.getElementById("copyButton");
 
+let rawOutputText = "";
+
 generateButton.addEventListener("click", async function () {
   const workflow = workflowSelect.value;
   const input = requirementInput.value.trim();
 
   if (!input) {
-    resultOutput.textContent = "Please enter input first.";
+    rawOutputText = "Please enter input first.";
+    resultOutput.textContent = rawOutputText;
     return;
   }
 
@@ -30,27 +33,34 @@ generateButton.addEventListener("click", async function () {
     const data = await response.json();
 
     if (!response.ok) {
-      resultOutput.textContent = formatErrorMessage(data.error);
+      rawOutputText = formatErrorMessage(data.error);
+      resultOutput.textContent = rawOutputText;
       return;
     }
 
-    resultOutput.textContent = data.output;
+    if (data.mode === "fallback" && data.warning) {
+      rawOutputText = `# Fallback Demo Mode\n\n${data.warning}\n\n${data.output}`;
+    } else {
+      rawOutputText = data.output;
+    }
+
+    renderMarkdown(rawOutputText);
   } catch (error) {
-    resultOutput.textContent =
+    rawOutputText =
       "Backend connection error:\n\nThe web app could not connect to the backend server.\n\nTo fix this:\n1. Open a terminal.\n2. Go to the backend folder.\n3. Run: npm.cmd start\n4. Try generating again.";
+
+    resultOutput.textContent = rawOutputText;
   } finally {
     setLoadingState(false);
   }
 });
 
 copyButton.addEventListener("click", function () {
-  const outputText = resultOutput.textContent.trim();
-
-  if (!outputText || outputText === "Your generated QA output will appear here.") {
+  if (!rawOutputText || rawOutputText === "Your generated QA output will appear here.") {
     return;
   }
 
-  navigator.clipboard.writeText(outputText);
+  navigator.clipboard.writeText(rawOutputText);
 
   copyButton.textContent = "Copied!";
 
@@ -64,10 +74,20 @@ function setLoadingState(isLoading) {
 
   if (isLoading) {
     generateButton.textContent = "Generating...";
-    resultOutput.textContent = "Generating QA output...";
+    rawOutputText = "Generating QA output...";
+    resultOutput.textContent = rawOutputText;
   } else {
     generateButton.textContent = "Generate QA Output";
   }
+}
+
+function renderMarkdown(markdownText) {
+  if (typeof marked === "undefined") {
+    resultOutput.textContent = markdownText;
+    return;
+  }
+
+  resultOutput.innerHTML = marked.parse(markdownText);
 }
 
 function formatErrorMessage(errorMessage) {
