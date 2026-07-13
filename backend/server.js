@@ -17,6 +17,14 @@ app.get("/", function (req, res) {
   });
 });
 
+app.get("/health", function (req, res) {
+  res.json({
+    status: "ok",
+    service: "AI Test Case Generator backend",
+    timestamp: new Date().toISOString(),
+  });
+});
+
 app.post("/generate", async function (req, res) {
   try {
     const { workflow, input } = req.body;
