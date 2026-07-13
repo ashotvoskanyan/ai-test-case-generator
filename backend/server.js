@@ -51,24 +51,77 @@ app.post("/generate", async function (req, res) {
     console.error("OpenAI API error:", error);
 
     res.status(500).json({
-      error: "Failed to generate QA output.",
+      error: error.message || "Failed to generate QA output.",
     });
   }
 });
 
 function buildPrompt(workflow, input) {
+  const baseRules = `General rules:
+- Do not use conversational phrases.
+- Do not say "Certainly", "Here is", or "Let me know".
+- Do not add a closing assistant message.
+- Do not wrap the answer in a code block.
+- Do not start the answer with \`\`\`markdown.
+- Do not end the answer with \`\`\`.
+- Use Markdown headings, tables, and bullet points directly.
+- Use clear QA documentation format.
+- Keep assumptions realistic.
+- If information is missing, add it to Clarifying Questions.
+- Do not invent exact product rules unless they are provided.
+- Classify test cases carefully: success scenarios are Positive, failure scenarios are Negative, unusual boundary scenarios are Edge.`;
+
   if (workflow === "test-cases") {
     return `You are a QA engineer.
 
 Generate structured QA test cases for this requirement.
 
-Include:
-- Requirement Summary
-- Assumptions
-- Positive Test Cases
-- Negative Test Cases
-- Edge Cases
-- Clarifying Questions
+${baseRules}
+
+Required sections:
+1. Requirement Summary
+2. Assumptions
+3. Test Cases
+4. Edge Cases
+5. Clarifying Questions
+
+Test Cases table columns:
+- Test Case ID
+- Type
+- Test Level
+- Title
+- Preconditions
+- Steps
+- Expected Result
+- Priority
+- Severity
+- Status
+
+Allowed Type values:
+- Positive
+- Negative
+- Edge
+
+Allowed Test Level values:
+- UI
+- Functional
+- Validation
+- Security
+- Usability
+
+Allowed Priority values:
+- High
+- Medium
+- Low
+
+Allowed Severity values:
+- Critical
+- Major
+- Minor
+
+Allowed Status values:
+- Draft
+- Ready
 
 Requirement:
 ${input}`;
@@ -79,15 +132,19 @@ ${input}`;
 
 Turn this issue description into a structured bug report.
 
-Include:
-- Title
-- Environment
-- Steps to Reproduce
-- Actual Result
-- Expected Result
-- Severity
-- Priority
-- Additional Notes
+${baseRules}
+
+Required sections:
+1. Bug Summary
+2. Environment
+3. Preconditions
+4. Steps to Reproduce
+5. Actual Result
+6. Expected Result
+7. Severity
+8. Priority
+9. Additional Notes
+10. Clarifying Questions
 
 Issue Description:
 ${input}`;
@@ -98,20 +155,42 @@ ${input}`;
 
 Generate structured API test cases for this API description.
 
-Include:
-- API Summary
-- Assumptions
-- Positive API Test Cases
-- Negative API Test Cases
-- Edge Cases
-- Security Checks
-- Clarifying Questions
+${baseRules}
+
+Required sections:
+1. API Summary
+2. Assumptions
+3. API Test Cases
+4. Security Checks
+5. Clarifying Questions
+
+API Test Cases table columns:
+- Test Case ID
+- Type
+- Endpoint
+- Method
+- Request Body
+- Expected Status Code
+- Expected Response
+- Priority
+- Severity
+- Notes
+
+Allowed Type values:
+- Positive
+- Negative
+- Edge
+- Security
 
 API Description:
 ${input}`;
   }
 
-  return `You are a QA engineer. Generate QA documentation for this input:
+  return `You are a QA engineer.
+
+${baseRules}
+
+Generate structured QA documentation for this input:
 
 ${input}`;
 }
