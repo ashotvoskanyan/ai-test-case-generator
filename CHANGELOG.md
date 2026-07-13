@@ -1,5 +1,32 @@
 # Changelog
 
+## Version 0.8 - Output Formatting Improvements
+
+### Added
+
+- Added Markdown rendering in the web app.
+- Added `marked` library through CDN.
+- Added formatted HTML display for generated Markdown output.
+- Added styled table display for generated QA documentation.
+- Added raw Markdown storage for copy behavior.
+
+### Improved
+
+- Improved generated output readability in the browser.
+- Improved table spacing, borders, and header styling.
+- Improved output card styling.
+- Improved copy behavior so the Copy Output button copies raw Markdown instead of rendered HTML.
+- Improved demo presentation for portfolio review.
+
+### Learned
+
+- How Markdown can be rendered as HTML in the browser.
+- Why raw output and rendered output should be handled separately.
+- How to style generated documentation tables with CSS.
+- How frontend presentation affects demo quality.
+
+---
+
 ## Version 0.7 - Error Handling and Demo Stability
 
 ### Added

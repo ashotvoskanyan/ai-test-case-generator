@@ -87,7 +87,7 @@ This project demonstrates practical beginner-level skills in:
 
 ## Current Status
 
-Current version: Version 0.7 - Error Handling and Demo Stability
+Current version: Version 0.8 - Output Formatting Improvements
 
 Completed:
 
@@ -117,6 +117,10 @@ Completed:
 - Improved frontend error handling
 - User-friendly backend connection error messages
 - Fallback demo mode for API errors
+- Markdown output rendering
+- Improved generated output styling
+- Styled tables for QA documentation
+- Copy-friendly raw Markdown output
 
 ## Project Structure
 
@@ -220,7 +224,9 @@ Current behavior:
 - The backend sends the prompt to the OpenAI API.
 - If the OpenAI API works, the page displays real AI-generated QA documentation.
 - If the OpenAI API fails, the backend returns fallback demo output.
-- User can copy the generated output with the Copy Output button.
+- Generated Markdown is rendered as formatted HTML in the browser.
+- Tables, headings, lists, and code are displayed in a readable format.
+- User can copy the raw Markdown output with the Copy Output button.
 - Empty input shows a validation message.
 - Backend connection errors are displayed with clear instructions.
 
@@ -311,8 +317,8 @@ If the API key is missing or the API request fails, the backend can return fallb
 
 Planned improvements:
 
-- Add output formatting improvements
 - Add deployment instructions
 - Deploy the web app online
 - Add export to Markdown
 - Add saved examples
+- Add more polished demo examples

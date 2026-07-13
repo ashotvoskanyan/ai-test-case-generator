@@ -75,15 +75,25 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Add user-friendly backend connection error display
 - [x] Add user-friendly API error display
 - [x] Update README.md
-- [ ] Update CHANGELOG.md
+- [x] Update CHANGELOG.md
 
 ## Version 0.8 - Output Formatting Improvements
 
-- [ ] Improve generated output display in the browser
-- [ ] Add better spacing for generated QA documentation
-- [ ] Add copy-friendly Markdown output
-- [ ] Add export to Markdown
-- [ ] Add saved examples
+- [x] Add Markdown output rendering
+- [x] Improve generated output display in the browser
+- [x] Add better spacing for generated QA documentation
+- [x] Style generated QA tables
+- [x] Keep Copy Output button copying raw Markdown
+- [x] Update README.md
+- [ ] Update CHANGELOG.md
+
+## Version 0.9 - Deployment Preparation
+
+- [ ] Add deployment instructions
+- [ ] Prepare backend for deployment
+- [ ] Prepare frontend for deployment
+- [ ] Add production environment variable notes
+- [ ] Add demo usage instructions
 
 ## Future Improvements
 
@@ -92,5 +102,6 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [ ] Add more bug report examples
 - [ ] Add response validation examples
 - [ ] Improve Prompt v4 based on scoring results
-- [ ] Add deployment instructions
+- [ ] Add export to Markdown
+- [ ] Add saved examples
 - [ ] Deploy the web app online
