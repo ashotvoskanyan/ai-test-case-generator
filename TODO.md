@@ -69,11 +69,21 @@ This file tracks planned improvements for the AI Test Case Generator project.
 
 ## Version 0.7 - Error Handling and Demo Stability
 
-- [ ] Add better frontend error messages
-- [ ] Add fallback demo mode for API errors
-- [ ] Add clearer loading states
-- [ ] Add user-friendly API error display
-- [ ] Add basic retry guidance for backend connection issues
+- [x] Add better frontend error messages
+- [x] Add fallback demo mode for API errors
+- [x] Add clearer loading states
+- [x] Add user-friendly backend connection error display
+- [x] Add user-friendly API error display
+- [x] Update README.md
+- [ ] Update CHANGELOG.md
+
+## Version 0.8 - Output Formatting Improvements
+
+- [ ] Improve generated output display in the browser
+- [ ] Add better spacing for generated QA documentation
+- [ ] Add copy-friendly Markdown output
+- [ ] Add export to Markdown
+- [ ] Add saved examples
 
 ## Future Improvements
 
@@ -82,7 +92,5 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [ ] Add more bug report examples
 - [ ] Add response validation examples
 - [ ] Improve Prompt v4 based on scoring results
-- [ ] Add export to Markdown
-- [ ] Add saved examples
 - [ ] Add deployment instructions
 - [ ] Deploy the web app online

@@ -18,8 +18,9 @@ This project uses reusable prompts, a browser interface, and a Node.js backend t
 - API test cases
 - Prompt quality evaluations
 - Real AI-generated QA output
+- Fallback demo output when the API is unavailable
 
-The goal is to practice Manual QA, API testing, prompt engineering, AI-assisted testing, GitHub documentation, basic web development, backend development, API integration, and project structure.
+The goal is to practice Manual QA, API testing, prompt engineering, AI-assisted testing, GitHub documentation, basic web development, backend development, API integration, error handling, and project structure.
 
 ## What This Project Does
 
@@ -39,7 +40,7 @@ The project currently has four main workflows:
 
 4. **Web App Prototype**
 
-   Provides a simple browser interface for entering a requirement and viewing generated QA output.
+   Provides a browser interface for entering input and viewing generated QA output.
 
 ## Example Input
 
@@ -80,11 +81,13 @@ This project demonstrates practical beginner-level skills in:
 - Express backend development
 - OpenAI API integration
 - Secure environment variable handling
+- Frontend error handling
+- API fallback handling
 - Project structure and versioning
 
 ## Current Status
 
-Current version: Version 0.6 - OpenAI API Integration
+Current version: Version 0.7 - Error Handling and Demo Stability
 
 Completed:
 
@@ -111,6 +114,9 @@ Completed:
 - Frontend-to-backend request flow
 - Real AI-generated QA output
 - Improved backend prompts for structured QA output
+- Improved frontend error handling
+- User-friendly backend connection error messages
+- Fallback demo mode for API errors
 
 ## Project Structure
 
@@ -197,7 +203,7 @@ Current prompts:
 
 ## Web App Prototype
 
-The first web app prototype is stored in the `web-app/` folder.
+The web app prototype is stored in the `web-app/` folder.
 
 Current web app files:
 
@@ -212,10 +218,11 @@ Current behavior:
 - User clicks the Generate QA Output button.
 - The web app sends the request to the backend.
 - The backend sends the prompt to the OpenAI API.
-- The page displays real AI-generated QA documentation.
+- If the OpenAI API works, the page displays real AI-generated QA documentation.
+- If the OpenAI API fails, the backend returns fallback demo output.
 - User can copy the generated output with the Copy Output button.
 - Empty input shows a validation message.
-- Backend connection errors are displayed in the output area.
+- Backend connection errors are displayed with clear instructions.
 
 ## Backend
 
@@ -230,6 +237,8 @@ Current backend files:
 - `backend/.gitignore` - ignores `.env` and `node_modules/`
 
 The backend receives requests from the web app, builds a QA prompt, sends the request to the OpenAI API, and returns the generated QA output to the browser.
+
+If the OpenAI API is unavailable, the backend returns fallback demo output so the app remains usable.
 
 The real API key is stored locally in `backend/.env` and is not committed to GitHub.
 
@@ -268,7 +277,7 @@ npm.cmd start
 The backend should run on:
 
 ~~~text
-http://localhost:3000
+localhost:3000
 ~~~
 
 ### 2. Open the web app
@@ -285,7 +294,7 @@ Select a workflow, enter input, and click Generate QA Output.
 
 ## Environment Variables
 
-The backend requires a local `.env` file.
+The backend requires a local `.env` file for real AI output.
 
 Example:
 
@@ -296,13 +305,14 @@ PORT=3000
 
 The real `.env` file is ignored by Git and should not be committed.
 
+If the API key is missing or the API request fails, the backend can return fallback demo output.
+
 ## Next Steps
 
 Planned improvements:
 
-- Add better frontend error messages
-- Add loading state improvements
-- Add fallback demo mode for API errors
 - Add output formatting improvements
 - Add deployment instructions
 - Deploy the web app online
+- Add export to Markdown
+- Add saved examples

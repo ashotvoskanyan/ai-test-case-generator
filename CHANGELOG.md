@@ -1,5 +1,33 @@
 # Changelog
 
+## Version 0.7 - Error Handling and Demo Stability
+
+### Added
+
+- Added improved frontend error handling.
+- Added user-friendly backend connection error messages.
+- Added fallback demo mode for API errors.
+- Added fallback output for Test Cases workflow.
+- Added fallback output for Bug Report workflow.
+- Added fallback output for API Tests workflow.
+- Added fallback response mode from the backend.
+
+### Improved
+
+- Improved app stability when the OpenAI API is unavailable.
+- Improved user guidance when the backend server is not running.
+- Improved backend behavior when the API key is missing or invalid.
+- Improved demo reliability for portfolio review.
+
+### Learned
+
+- How to handle backend connection failures in the frontend.
+- How to return fallback output when an API request fails.
+- Why production-like apps need graceful error handling.
+- How fallback mode keeps a demo usable even when external services fail.
+
+---
+
 ## Version 0.6 - OpenAI API Integration
 
 ### Added
