@@ -1,3 +1,5 @@
+const API_BASE_URL = "http://localhost:3000";
+
 const workflowSelect = document.getElementById("workflow");
 const requirementInput = document.getElementById("requirement");
 const generateButton = document.getElementById("generateButton");
@@ -19,7 +21,7 @@ generateButton.addEventListener("click", async function () {
   setLoadingState(true);
 
   try {
-    const response = await fetch("http://localhost:3000/generate", {
+    const response = await fetch(`${API_BASE_URL}/generate`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
