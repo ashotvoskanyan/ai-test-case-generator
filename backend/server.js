@@ -28,8 +28,10 @@ app.post("/generate", async function (req, res) {
     }
 
     if (!process.env.OPENAI_API_KEY) {
-      return res.status(500).json({
-        error: "OpenAI API key is missing. Add OPENAI_API_KEY to your .env file.",
+      return res.json({
+        output: buildFallbackOutput(workflow, input),
+        mode: "fallback",
+        warning: "OpenAI API key is missing. Showing demo output instead.",
       });
     }
 
@@ -46,12 +48,17 @@ app.post("/generate", async function (req, res) {
 
     res.json({
       output: response.output_text,
+      mode: "ai",
     });
   } catch (error) {
     console.error("OpenAI API error:", error);
 
-    res.status(500).json({
-      error: error.message || "Failed to generate QA output.",
+    const { workflow, input } = req.body;
+
+    res.json({
+      output: buildFallbackOutput(workflow, input),
+      mode: "fallback",
+      warning: error.message || "OpenAI API failed. Showing demo output instead.",
     });
   }
 });
@@ -192,6 +199,150 @@ ${baseRules}
 
 Generate structured QA documentation for this input:
 
+${input}`;
+}
+
+function buildFallbackOutput(workflow, input) {
+  if (workflow === "test-cases") {
+    return `Fallback Demo Mode
+
+# 1. Requirement Summary
+
+The system should support the requested user action based on the provided requirement.
+
+# 2. Assumptions
+
+- The user can access the application.
+- Required input fields are available.
+- The system validates user input.
+- Success and error messages are displayed clearly.
+
+# 3. Test Cases
+
+| Test Case ID | Type | Test Level | Title | Preconditions | Steps | Expected Result | Priority | Severity | Status |
+|---|---|---|---|---|---|---|---|---|---|
+| TC001 | Positive | Functional | Complete action with valid data | User is on the correct page | 1. Enter valid data 2. Submit the form | Action is completed successfully | High | Major | Draft |
+| TC002 | Negative | Validation | Submit empty required fields | User is on the correct page | 1. Leave required fields empty 2. Submit the form | Validation errors are displayed | High | Major | Draft |
+| TC003 | Edge | Usability | Submit unexpected characters | User is on the correct page | 1. Enter unexpected characters 2. Submit the form | System handles input safely | Medium | Minor | Draft |
+
+# 4. Edge Cases
+
+- User refreshes the page during the action.
+- User submits very long input values.
+- User submits input with leading or trailing spaces.
+- Network interruption occurs during submission.
+
+# 5. Clarifying Questions
+
+- What validation rules should apply?
+- What should happen after successful completion?
+- Are there any security or rate limiting requirements?
+
+Original Input:
+${input}`;
+  }
+
+  if (workflow === "bug-report") {
+    return `Fallback Demo Mode
+
+# 1. Bug Summary
+
+An issue was reported based on the provided description.
+
+# 2. Environment
+
+- Environment: Not provided
+- Browser: Not provided
+- Device: Not provided
+- User role: Not provided
+
+# 3. Preconditions
+
+- User can access the affected feature.
+- The issue can be reproduced in the application.
+
+# 4. Steps to Reproduce
+
+1. Open the application.
+2. Navigate to the affected feature.
+3. Perform the action described in the issue.
+4. Observe the result.
+
+# 5. Actual Result
+
+The application does not behave as expected.
+
+# 6. Expected Result
+
+The application should complete the action correctly or display a clear validation message.
+
+# 7. Severity
+
+Medium
+
+# 8. Priority
+
+Medium
+
+# 9. Additional Notes
+
+This is fallback demo output because the AI API was unavailable.
+
+# 10. Clarifying Questions
+
+- What browser and device were used?
+- Is the issue reproducible every time?
+- Are there screenshots, logs, or error messages?
+
+Original Issue Description:
+${input}`;
+  }
+
+  if (workflow === "api-tests") {
+    return `Fallback Demo Mode
+
+# 1. API Summary
+
+The endpoint should process valid requests, reject invalid requests, and return clear responses.
+
+# 2. Assumptions
+
+- The API uses JSON request and response bodies.
+- Required fields must be validated.
+- Unauthorized access should be rejected.
+- Sensitive data should not be exposed.
+
+# 3. API Test Cases
+
+| Test Case ID | Type | Endpoint | Method | Request Body | Expected Status Code | Expected Response | Priority | Severity | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| API-TC001 | Positive | Not provided | Not provided | Valid request body | 200 or 201 | Success response | High | Major | Confirm exact status code |
+| API-TC002 | Negative | Not provided | Not provided | Missing required fields | 400 | Validation error | High | Major | Required fields need confirmation |
+| API-TC003 | Security | Not provided | Not provided | Unauthorized request | 401 or 403 | Access denied | High | Critical | Confirm authentication rules |
+
+# 4. Security Checks
+
+- Verify unauthorized requests are rejected.
+- Verify sensitive data is not exposed.
+- Verify invalid input is handled safely.
+- Verify error messages do not reveal internal system details.
+
+# 5. Clarifying Questions
+
+- What is the endpoint path?
+- What HTTP method should be used?
+- What fields are required?
+- What status codes are expected?
+
+Original API Description:
+${input}`;
+  }
+
+  return `Fallback Demo Mode
+
+Structured QA documentation could not be generated by the AI API.
+
+Original Input:
 ${input}`;
 }
 
