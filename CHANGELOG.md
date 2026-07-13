@@ -1,5 +1,35 @@
 # Changelog
 
+## Version 0.6 - OpenAI API Integration
+
+### Added
+
+- Added Express backend server.
+- Added OpenAI API integration.
+- Added `/generate` backend endpoint.
+- Added secure API key handling with `.env`.
+- Added `.env.example` for safe environment variable documentation.
+- Added backend `.gitignore` to exclude `.env` and `node_modules/`.
+- Connected the web app frontend to the backend.
+- Added real AI-generated QA output.
+- Added structured backend prompts for Test Cases, Bug Report, and API Tests workflows.
+
+### Improved
+
+- Improved backend prompt rules to avoid conversational AI responses.
+- Improved output formatting rules for QA documentation.
+- Improved error handling for missing API key and API failures.
+
+### Learned
+
+- How frontend and backend communicate through HTTP requests.
+- Why API keys must not be stored in browser JavaScript.
+- How `.env` protects local secrets.
+- How Express can receive user input and return generated output.
+- How to use OpenAI API from a Node.js backend.
+
+---
+
 ## Version 0.5 - First Web App Version
 
 ### Added
@@ -16,12 +46,8 @@
 - Added basic JavaScript interaction.
 - Added workflow selection for Test Cases, Bug Report, and API Tests.
 - Added different mock outputs for each workflow.
-- Updated JavaScript logic to handle multiple QA workflows.
 - Added Copy Output button.
 - Added clipboard copy behavior for generated QA output.
-- Added temporary Copied! button state after copying.
-
-
 
 ### Learned
 
@@ -33,11 +59,7 @@
 
 ---
 
-
-
 ## Version 0.4 - API Testing Examples
-
-
 
 ### Added
 
@@ -49,8 +71,6 @@
 - Updated README.md to include API testing workflow.
 - Updated project structure documentation.
 
-
-
 ### Learned
 
 - How API testing differs from UI testing.
@@ -60,11 +80,7 @@
 
 ---
 
-
-
 ## Version 0.3 - Bug Report Generator
-
-
 
 ### Added
 
@@ -75,8 +91,6 @@
 - Added bug report scoring system.
 - Updated README.md to include bug report workflow.
 
-
-
 ### Learned
 
 - How to turn issue descriptions into structured bug reports.
@@ -86,11 +100,7 @@
 
 ---
 
-
-
 ## Version 0.2 - Better Project Structure
-
-
 
 ### Added
 
@@ -103,8 +113,6 @@
 - Added CHANGELOG.md.
 - Added scoring.md.
 
-
-
 ### Learned
 
 - How to organize a small QA project.
@@ -114,11 +122,7 @@
 
 ---
 
-
-
 ## Version 0.1 - Manual Prompt MVP
-
-
 
 ### Added
 
@@ -129,12 +133,9 @@
 - Created GitHub repository.
 - Pushed first version to GitHub.
 
-
-
 ### Learned
 
 - How to start a simple AI-assisted QA project.
 - How to document a project in Markdown.
 - How to use basic Git commands.
 - How to publish a project on GitHub.
-

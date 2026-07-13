@@ -30,8 +30,6 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Update README.md
 - [x] Update CHANGELOG.md
 
-
-
 ## Version 0.4 - API Testing Examples
 
 - [x] Create API testing prompt
@@ -41,8 +39,6 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Add API testing scoring system
 - [x] Update README.md
 - [x] Update CHANGELOG.md
-
-
 
 ## Version 0.5 - First Web App Version
 
@@ -59,18 +55,25 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Update README.md
 - [x] Update CHANGELOG.md
 
-
-
 ## Version 0.6 - OpenAI API Integration
 
-- [ ] Create a simple backend
-- [ ] Add OpenAI API connection
-- [ ] Send user input to the API
-- [ ] Display real AI-generated QA output
-- [ ] Hide API key using environment variables
-- [ ] Add basic error handling
+- [x] Create a simple backend
+- [x] Add OpenAI API connection
+- [x] Send user input to the API
+- [x] Display real AI-generated QA output
+- [x] Hide API key using environment variables
+- [x] Add basic error handling
+- [x] Improve backend prompts for structured QA output
+- [x] Update README.md
+- [x] Update CHANGELOG.md
 
+## Version 0.7 - Error Handling and Demo Stability
 
+- [ ] Add better frontend error messages
+- [ ] Add fallback demo mode for API errors
+- [ ] Add clearer loading states
+- [ ] Add user-friendly API error display
+- [ ] Add basic retry guidance for backend connection issues
 
 ## Future Improvements
 
@@ -80,6 +83,6 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [ ] Add response validation examples
 - [ ] Improve Prompt v4 based on scoring results
 - [ ] Add export to Markdown
-- [ ] Add copy output button
 - [ ] Add saved examples
+- [ ] Add deployment instructions
 - [ ] Deploy the web app online
