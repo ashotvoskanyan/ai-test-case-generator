@@ -1,5 +1,34 @@
 # Changelog
 
+## Version 0.9 - Deployment Preparation
+
+### Added
+
+- Added backend `/health` endpoint.
+- Added configurable frontend API base URL.
+- Added `web-app/config.example.js`.
+- Added improved `backend/.env.example`.
+- Added `DEPLOYMENT.md`.
+- Added deployment notes for backend and frontend setup.
+
+### Improved
+
+- Improved deployment readiness.
+- Improved backend status checking with a health endpoint.
+- Improved frontend configuration for future deployed backend URLs.
+- Improved documentation for environment variables.
+- Improved project structure documentation.
+
+### Learned
+
+- How health check endpoints help with deployment.
+- Why frontend API URLs should be easy to configure.
+- Why environment variables are required for deployed backends.
+- Why API keys must stay on the backend.
+- How to document deployment requirements clearly.
+
+---
+
 ## Version 0.8 - Output Formatting Improvements
 
 ### Added

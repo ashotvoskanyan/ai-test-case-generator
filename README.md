@@ -87,7 +87,7 @@ This project demonstrates practical beginner-level skills in:
 
 ## Current Status
 
-Current version: Version 0.8 - Output Formatting Improvements
+Current version: Version 0.9 - Deployment Preparation
 
 Completed:
 
@@ -121,6 +121,11 @@ Completed:
 - Improved generated output styling
 - Styled tables for QA documentation
 - Copy-friendly raw Markdown output
+- Backend health check endpoint
+- Frontend API base URL configuration
+- Frontend config example file
+- Backend environment example update
+- Deployment guide
 
 ## Project Structure
 
@@ -128,6 +133,7 @@ Completed:
 ai-test-case-generator/
 |-- README.md
 |-- CHANGELOG.md
+|-- DEPLOYMENT.md
 |-- TODO.md
 |-- template.md
 |-- scoring.md
@@ -161,6 +167,7 @@ ai-test-case-generator/
 |   |-- index.html
 |   |-- style.css
 |   |-- script.js
+|   |-- config.example.js
 ~~~
 
 ## Examples
@@ -248,6 +255,26 @@ If the OpenAI API is unavailable, the backend returns fallback demo output so th
 
 The real API key is stored locally in `backend/.env` and is not committed to GitHub.
 
+## Deployment
+
+Deployment notes are stored in `DEPLOYMENT.md`.
+
+The project is prepared for deployment with:
+
+- Backend health check endpoint
+- Frontend API base URL configuration
+- Frontend config example
+- Backend environment variable example
+- Deployment guide
+
+The backend health check is available at:
+
+`/health`
+
+For local development:
+
+`localhost:3000/health`
+
 ## Prompt Versioning
 
 The test case prompt improved step by step:
@@ -313,12 +340,11 @@ The real `.env` file is ignored by Git and should not be committed.
 
 If the API key is missing or the API request fails, the backend can return fallback demo output.
 
-## Next Steps
-
 Planned improvements:
 
-- Add deployment instructions
-- Deploy the web app online
-- Add export to Markdown
-- Add saved examples
-- Add more polished demo examples
+- Choose deployment platform
+- Deploy backend online
+- Deploy frontend online
+- Connect frontend to deployed backend
+- Add live demo link to README.md
+- Add screenshots of the deployed app

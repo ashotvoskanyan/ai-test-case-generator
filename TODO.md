@@ -85,15 +85,26 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [x] Style generated QA tables
 - [x] Keep Copy Output button copying raw Markdown
 - [x] Update README.md
-- [ ] Update CHANGELOG.md
+- [x] Update CHANGELOG.md
 
 ## Version 0.9 - Deployment Preparation
 
-- [ ] Add deployment instructions
-- [ ] Prepare backend for deployment
-- [ ] Prepare frontend for deployment
-- [ ] Add production environment variable notes
-- [ ] Add demo usage instructions
+- [x] Add backend health check endpoint
+- [x] Add configurable frontend API base URL
+- [x] Add frontend config example file
+- [x] Update backend environment example
+- [x] Add deployment guide
+- [x] Update README.md
+- [ ] Update CHANGELOG.md
+
+## Version 1.0 - Live Demo
+
+- [ ] Choose deployment platform
+- [ ] Deploy backend online
+- [ ] Deploy frontend online
+- [ ] Connect frontend to deployed backend
+- [ ] Add live demo link to README.md
+- [ ] Add screenshots of the deployed app
 
 ## Future Improvements
 
@@ -104,4 +115,3 @@ This file tracks planned improvements for the AI Test Case Generator project.
 - [ ] Improve Prompt v4 based on scoring results
 - [ ] Add export to Markdown
 - [ ] Add saved examples
-- [ ] Deploy the web app online
